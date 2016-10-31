@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour {
     public float moveForce = 365f;
     public float maxSpeed = 5f;
     public bool jump = false;
     public float jumpForce = 1000f;
+    public Text dialogue;
     
     
     private bool grounded = false;
