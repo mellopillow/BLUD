@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemySpawner : MonoBehaviour {
 
     public GameObject enemy;
-    public float distanceBetween;
+    public float spawnDistance, distanceFromTrigger;
     GameObject clone;
     Transform spawnLocation;
     public Transform[] triggerLocations;
@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour {
 
     void Spawn()
     {
-        clone = Instantiate(enemy, new Vector3(spawnLocation.position.x - (Random.value*2-1)*distanceBetween, spawnLocation.position.y, spawnLocation.position.z), Quaternion.Euler(0, 0, 0)) as GameObject;
+        clone = Instantiate(enemy, new Vector3(spawnLocation.position.x - ((int)(Random.value*2)*2-1)*spawnDistance, spawnLocation.position.y, spawnLocation.position.z), Quaternion.Euler(0, 0, 0)) as GameObject;
     }
 
     void TimeSpawn(){
@@ -33,13 +33,15 @@ public class EnemySpawner : MonoBehaviour {
     }
 
     void TriggerSpawn() {
+        timer += Time.deltaTime;
         foreach (Transform element in triggerLocations)
         {
-            if (Vector3.Distance(element.position, spawnLocation.transform.position) < 5 && spawned == false){
+            if (Vector3.Distance(element.position, spawnLocation.transform.position) < distanceFromTrigger && spawned == false){
                 Spawn();
                 spawned = true;
-                TimeSpawn();
-            } 
+            }
+            if (timer > 10)
+                Despawn();
         }
     }
 
@@ -50,12 +52,12 @@ public class EnemySpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        spawnLocation = GameObject.FindGameObjectWithTag("Player").transform;
         timer = 0;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        spawnLocation = GameObject.FindGameObjectWithTag("Player").transform;
         TriggerSpawn();
         
 	}
