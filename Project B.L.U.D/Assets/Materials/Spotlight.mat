@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Spotlight
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: c719e20d617e9374b8121121ffd1962d, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -74,6 +74,12 @@ Material:
         name: _BumpScale
       second: 1
     - first:
+        name: _CenterX
+      second: 0.48449612
+    - first:
+        name: _CenterY
+      second: -0.34913793
+    - first:
         name: _Cutoff
       second: 0.5
     - first:
@@ -103,6 +109,12 @@ Material:
     - first:
         name: _Parallax
       second: 0.02
+    - first:
+        name: _Radius
+      second: 0.035
+    - first:
+        name: _Sharpness
+      second: 1.7
     - first:
         name: _SmoothnessTextureChannel
       second: 0
