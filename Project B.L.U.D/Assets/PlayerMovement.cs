@@ -5,50 +5,36 @@ using System.Diagnostics;
 public class PlayerMovement : MonoBehaviour {
 
     // Use this for initialization
-    public float speed = 4;
-    public bool jumping = false;
-    public float gravity = -1;
+    public float maxSpeed;
+    float smoothing, frames;
     Vector3 velocity;
     Rigidbody2D playerRB;
-    Stopwatch s = new Stopwatch();
+    
 
 	void Start () {
+        frames = 0;
+        maxSpeed = .078f;
         playerRB = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (smoothing < 1)
+            smoothing += .0207f;
         float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-        Move(h, v);
+        if (h == 0){
+            frames += 1;
+            if (frames > 15){
+                smoothing = .0207f;
+                frames = 0;
+            }
+        }
+        /*float v = Input.GetAxisRaw("Vertical");*/
+        Move(h/*, v*/);
 	}
     
-    void Move(float h, float v){
-        velocity.x = h * speed/50;
-        velocity.y = gravity * Time.deltaTime;
+    void Move(float h/*, float v*/){
+        velocity.x = h * smoothing * maxSpeed;
         transform.Translate(velocity);
-    }
-
-    void Jump(float v){
-        if (v>0 && jumping == false)
-        {
-            s.Start();
-            jumping = true;
-            gravity = 0;
-            velocity.y = v * speed/3;
-            transform.Translate(velocity);
-        }
-        if(s.ElapsedMilliseconds > 200)
-        {
-            velocity.y = 0;
-            gravity = -1;
-        }
-        if (s.ElapsedMilliseconds > 600)
-        {
-            s.Reset();
-            jumping = false;
-        }
-
-
     }
 }
