@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     float smoothing, frames;
     Vector3 velocity;
     Rigidbody2D playerRB;
+    public Animator animator;
     
 
 	void Start () {
@@ -36,5 +37,18 @@ public class PlayerMovement : MonoBehaviour {
     void Move(float h/*, float v*/){
         velocity.x = h * smoothing * maxSpeed;
         transform.Translate(velocity);
+        if (h < 0)
+        {
+            animator.Play("Left");
+        }
+        else if (h > 0)
+        {
+            animator.Play("Right");
+        }
+        else
+        {
+           animator.Play("Idle");
+        }
+       
     }
 }

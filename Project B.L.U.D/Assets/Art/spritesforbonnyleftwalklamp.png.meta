@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: 66b66b820b72e644889b33cf0479ec76
-timeCreated: 1479172810
+guid: 96fd8ccc2403b8d44bce297ddcd42369
+timeCreated: 1479173050
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: spritesforbonnyleftwalk_0
-    21300002: spritesforbonnyleftwalk_1
-    21300004: spritesforbonnyleftwalk_2
-    21300006: spritesforbonnyleftwalk_3
-    21300008: spritesforbonnyleftwalk_4
-    21300010: spritesforbonnyleftwalk_5
-    21300012: spritesforbonnyleftwalk_6
-    21300014: spritesforbonnyleftwalk_7
-    21300016: spritesforbonnyleftwalk_8
+    21300000: spritesforbonnyleftwalklamp_0
+    21300002: spritesforbonnyleftwalklamp_1
+    21300004: spritesforbonnyleftwalklamp_2
+    21300006: spritesforbonnyleftwalklamp_3
+    21300008: spritesforbonnyleftwalklamp_4
+    21300010: spritesforbonnyleftwalklamp_5
+    21300012: spritesforbonnyleftwalklamp_6
+    21300014: spritesforbonnyleftwalklamp_7
+    21300016: spritesforbonnyleftwalklamp_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,7 +38,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -62,117 +62,117 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_0
+      name: spritesforbonnyleftwalklamp_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 7367.1113
+        y: 7361.778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_1
+      name: spritesforbonnyleftwalklamp_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 6447.1113
+        y: 6441.778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_2
+      name: spritesforbonnyleftwalklamp_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 5527.1113
+        y: 5521.778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_3
+      name: spritesforbonnyleftwalklamp_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 4607.1113
+        y: 4601.778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_4
+      name: spritesforbonnyleftwalklamp_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 3687.111
+        y: 3681.7778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_5
+      name: spritesforbonnyleftwalklamp_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 2767.111
+        y: 2761.7778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_6
+      name: spritesforbonnyleftwalklamp_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 1847.1111
+        y: 1841.7778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_7
+      name: spritesforbonnyleftwalklamp_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 927.1111
+        y: 921.7778
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: spritesforbonnyleftwalk_8
+      name: spritesforbonnyleftwalklamp_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 7.111084
+        y: 1.777771
         width: 1090
-        height: 920.8889
+        height: 920.2222
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
