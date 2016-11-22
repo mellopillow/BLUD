@@ -119,11 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1000010572090846, guid: b7b8fecb7ab82554b92a753db4995c86, type: 2}
   spawnDistance: 5
-  distanceFromTrigger: 1
+  distanceFromTrigger: 2
   triggerLocations:
   - {fileID: 2112614117}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &278930517
 Transform:
   m_ObjectHideFlags: 0
@@ -254,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 0.08
+  animator: {fileID: 0}
 --- !u!212 &817174637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -419,7 +418,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2112614116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -6, y: -1, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []

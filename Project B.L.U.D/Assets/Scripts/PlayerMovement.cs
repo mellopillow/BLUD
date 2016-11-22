@@ -5,7 +5,7 @@ using System.Diagnostics;
 public class PlayerMovement : MonoBehaviour {
 
     // Use this for initialization
-    public float maxSpeed;
+    public float maxSpeed = .078f;
     float smoothing, frames;
     Vector3 velocity;
     Rigidbody2D playerRB;
@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Start () {
         frames = 0;
-        maxSpeed = .078f;
         playerRB = GetComponent<Rigidbody2D>();
 	}
 	

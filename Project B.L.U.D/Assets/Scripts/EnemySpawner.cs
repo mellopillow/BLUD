@@ -4,17 +4,18 @@ using System.Collections;
 public class EnemySpawner : MonoBehaviour {
 
     public GameObject enemy;
-    public float spawnDistance, distanceFromTrigger;
+    public float spawnDistance = 5.0f;
+    public float distanceFromTrigger = 2.0f;
     GameObject clone;
     Transform spawnLocation;
     public Transform[] triggerLocations;
     double timer;
-    bool spawned;
+    bool spawned = false;
 
 
     void Spawn()
     {
-        clone = Instantiate(enemy, new Vector3(spawnLocation.position.x - ((int)(Random.value*2)*2-1)*spawnDistance, spawnLocation.position.y, spawnLocation.position.z), Quaternion.Euler(0, 0, 0)) as GameObject;
+        clone = Instantiate(enemy, new Vector3(spawnLocation.position.x - ((int)(Random.value*2)*2-1)*spawnDistance, spawnLocation.position.y, spawnLocation.position.z), Quaternion.identity) as GameObject;
     }
 
     void TimeSpawn(){
@@ -58,7 +59,17 @@ public class EnemySpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         spawnLocation = GameObject.FindGameObjectWithTag("Player").transform;
-        TriggerSpawn();
-        
-	}
+        //TriggerSpawn();
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Spawn();
+            spawned = true;
+        }
+
+    }
 }
