@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class killMyself : MonoBehaviour {
+
     double timer;
 	// Use this for initialization
 	void Start () {
@@ -14,11 +15,4 @@ public class killMyself : MonoBehaviour {
        
         
 	}
-
-    ~killMyself()
-    {
-        EnemySpawner.spawned = false;
-    }
 }
-
-

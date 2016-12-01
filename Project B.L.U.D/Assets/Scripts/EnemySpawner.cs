@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour {
     Transform spawnLocation;
     public Transform[] triggerLocations;
     double timer;
-    public static bool spawned = false;
+    bool spawned = false;
 
 
     void Spawn()
@@ -67,11 +67,8 @@ public class EnemySpawner : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            if (spawned == false)
-            {
-                Spawn();
-                spawned = true;
-            }
+            Spawn();
+            spawned = true;
         }
 
     }
