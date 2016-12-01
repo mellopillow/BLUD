@@ -103,6 +103,7 @@ GameObject:
   - 124: {fileID: 102671978}
   - 81: {fileID: 102671977}
   - 114: {fileID: 102671982}
+  - 114: {fileID: 102671983}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -151,7 +152,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.516008
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -190,6 +191,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mat: {fileID: 2100000, guid: b4c946a4ec364d446961801d36bab50e, type: 2}
+--- !u!114 &102671983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102671976}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba96529fc6f719428010df09681f2ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mat: {fileID: 2100000, guid: 0a35388e60718e741838e3e021b18cab, type: 2}
 --- !u!1 &518571118
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,9 +837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6afb3656e8ab9342a58fbb958701e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  jumping: 0
-  gravity: -1
+  maxSpeed: 0
+  animator: {fileID: 0}
 --- !u!1 &2060722881
 GameObject:
   m_ObjectHideFlags: 0
