@@ -16,14 +16,14 @@ public class EnemyMovement : MonoBehaviour {
         enemyRB = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag ("Player").transform;
         enemy = this.transform;
-        h = player.position.x;
-        h2 = enemy.position.x;
         
 	}
 	
 	// Update is called once per frame
 	void Update () {
         timer += Time.deltaTime;
+        h = player.position.x;
+        h2 = enemy.position.x;
         Move();
 	}
 

@@ -75,10 +75,17 @@ Material:
       second: 1
     - first:
         name: _CenterX
+<<<<<<< HEAD
       second: 0
     - first:
         name: _CenterY
       second: 0.28125
+=======
+      second: 0.23853712
+    - first:
+        name: _CenterY
+      second: -0.03116554
+>>>>>>> origin/master
     - first:
         name: _Cutoff
       second: 0.5
