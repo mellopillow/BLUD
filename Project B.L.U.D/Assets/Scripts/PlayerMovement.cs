@@ -36,17 +36,20 @@ public class PlayerMovement : MonoBehaviour {
     void Move(float h/*, float v*/){
         velocity.x = h * smoothing * maxSpeed;
         transform.Translate(velocity);
-        if (h < 0)
+		var d = Input.GetAxis("Horizontal");
+        if (d < 0)
         {
-            animator.Play("Left");
+            //left
+			animator.SetInteger("Direction", 2);
         }
-        else if (h > 0)
+        else if (d > 0)
         {
-            animator.Play("Right");
+            //right
+			animator.SetInteger("Direction", 1);
         }
         else
         {
-           animator.Play("Idle");
+			animator.SetInteger("Direction", 0);
         }
        
     }
