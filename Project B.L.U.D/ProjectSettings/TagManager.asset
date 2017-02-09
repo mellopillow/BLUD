@@ -43,13 +43,13 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ForeGround
+  - name: BackGround
     uniqueID: 989748693
     locked: 0
   - name: MiddleGround
     uniqueID: 1817423249
     locked: 0
-  - name: BackGround
+  - name: ForeGround
     uniqueID: 4084672579
     locked: 0
   - name: UI
