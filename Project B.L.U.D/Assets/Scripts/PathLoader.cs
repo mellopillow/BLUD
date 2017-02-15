@@ -29,12 +29,12 @@ public class PathLoader : MonoBehaviour {
 	void OnMouseDown(){
         if (CheckCloseTo("Player", proximity)) {
             
-
+			Debug.Log ("hi");
 			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
             // fades text in and out based on distance between player and object
 
 			if(loadLevel == true)
-				Debug.Log ("WTF");
+                SceneManager.LoadScene(level);
             text.text = objectText;
         }
 			
