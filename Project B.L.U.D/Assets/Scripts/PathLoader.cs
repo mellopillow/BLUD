@@ -14,34 +14,32 @@ public class PathLoader : MonoBehaviour {
     public Text text;
     string objectText = "Dis is lamp";
 
-	void Start(){
-		
+	void Update(){
+		if (CheckCloseTo ("Player", proximity)) {
+			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Glow;
+		}
+
+		else {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
+			text.text = "";
+		}
 	}
 
 
-	void Update(){
+	void OnMouseDown(){
         if (CheckCloseTo("Player", proximity)) {
-
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Glow;
             
-            text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
+
+			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
             // fades text in and out based on distance between player and object
-            if (Input.GetMouseButton(0))
-            {
-                if(loadLevel)
-                    SceneManager.LoadScene(level);
-                text.text = objectText;
-            }
+
+			if(loadLevel == true)
+				Debug.Log ("WTF");
+            text.text = objectText;
         }
-
-        else {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
-            text.text = "";
-                }
-        
-        
-
+			
     }
+		
 
 	bool CheckCloseTo(string tag, float minimumDistance){
 		GameObject[] goWithTag = GameObject.FindGameObjectsWithTag (tag);

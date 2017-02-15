@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
 
-	public bool blocking = true;
+	public int blocking_counter;
+	public int counter = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -13,9 +14,9 @@ public class Obstacle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (blocking == true)
+		if (counter != blocking_counter)
 			this.gameObject.SetActive (true);
-		else if (blocking == false)
+		else if (counter == blocking_counter)
 			this.gameObject.SetActive (false);
 	}
 }

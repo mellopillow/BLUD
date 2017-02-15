@@ -15,8 +15,6 @@ public class ShaderCamera : MonoBehaviour
     {
         Vector3 mousePos = Input.mousePosition;
         //Shader.Find(Spotlight);
-        Debug.Log(Mat.shader);
-        Debug.Log("Hello?");
 
         float xPos = mousePos.x / Screen.width * 0.5f;
         float yPos = (Screen.height - mousePos.y) / Screen.height * (0.5f * 9)/16;

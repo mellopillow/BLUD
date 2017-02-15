@@ -75,10 +75,10 @@ Material:
       second: 1
     - first:
         name: _CenterX
-      second: 0.23233995
+      second: 0.24682651
     - first:
         name: _CenterY
-      second: -0.040512465
+      second: -0.04863722
     - first:
         name: _Cutoff
       second: 0.5
