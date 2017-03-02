@@ -19,7 +19,8 @@ namespace UnityStandardAssets._2D
         // Use this for initialization
         private void Start()
         {
-            r = target.position;
+			target = GameObject.FindGameObjectWithTag ("Player").transform;
+			r = target.position;
             r.y = r.y + 10;
             m_LastTargetPosition = r;
             m_OffsetZ = (transform.position - r).z;

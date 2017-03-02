@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 velocity;
     Rigidbody2D playerRB;
     public Animator animator;
+	public int spawnlocation = 0;
     
 
 	void Start () {
