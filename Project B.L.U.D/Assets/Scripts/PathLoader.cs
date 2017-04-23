@@ -37,12 +37,11 @@ public class PathLoader : MonoBehaviour {
 
 
 	bool CheckCloseTo(string tag, float minimumDistance){
-		GameObject[] goWithTag = GameObject.FindGameObjectsWithTag (tag);
-		for (int i = 0; i < goWithTag.Length; ++i) {
-			if (Vector3.Distance (transform.position, goWithTag [i].transform.position) <= minimumDistance)
-				return true;
-		}
-		return false;
+		GameObject goWithTag = GameObject.FindGameObjectWithTag (tag);
+		if (Vector3.Distance (transform.position, goWithTag.transform.position) <= minimumDistance)
+			return true;
+		else
+			return false;
 	}
 
     void textFade()
