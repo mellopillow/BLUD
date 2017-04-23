@@ -38,7 +38,7 @@ public class torch : MonoBehaviour {
 
 
 	bool CheckCloseTo(string tag, float minimumDistance){
-		GameObject[] goWithTag = GameObject.FindGameObjectsWithTag (tag);
+		GameObject goWithTag = GameObject.FindGameObjectWithTag (tag);
 		for (int i = 0; i < goWithTag.Length; ++i) {
 			if (Vector3.Distance (transform.position, goWithTag [i].transform.position) <= minimumDistance)
 				return true;

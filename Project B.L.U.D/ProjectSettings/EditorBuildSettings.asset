@@ -7,15 +7,25 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/introscene.unity
+    guid: f1101c1314663214189455b41ad7a5f6
   - enabled: 1
     path: Assets/Scenes/scene2.unity
+    guid: 49af1310bb93a674ca69732e71d154a2
   - enabled: 1
     path: Assets/Scenes/scene3.unity
+    guid: e6272ad522797e649b2497ac1ec2384a
   - enabled: 1
     path: Assets/Scenes/cemetery.unity
+    guid: 38c38847fea2d4c43ad765c7fb409b7e
   - enabled: 1
     path: Assets/Scenes/scene4.unity
+    guid: bfe9dae3263ab584db93a7181f0e9cc1
   - enabled: 1
     path: Assets/Scenes/cabin.unity
+    guid: ac97306d47a62a9499662f7a1ed18129
   - enabled: 1
     path: Assets/Scenes/cabininside.unity
+    guid: 23095be1162821e44874a4e3691fb5d3
+  - enabled: 1
+    path: Assets/Scenes/scene5.unity
+    guid: faf5973d5bb1b36469261528141b282d

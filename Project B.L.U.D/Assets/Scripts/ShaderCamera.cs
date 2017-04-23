@@ -17,7 +17,7 @@ public class ShaderCamera : MonoBehaviour
     public void Update()
     {
         Vector3 mousePos = Input.mousePosition;
-        Debug.Log(mousePos);
+        //Debug.Log(mousePos);
         Vector3 playerPos = playerTransform.position;
         Vector3 playerPosScreen = Camera.main.WorldToScreenPoint(playerPos);
         //Shader.Find(Spotlight);

@@ -26,6 +26,7 @@ public class PathLoader : MonoBehaviour {
 			{
 				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().spawnlocation = spawnset;
 				SceneManager.LoadScene (level);
+				Debug.Log ("hi");
 			}
 		}
 
