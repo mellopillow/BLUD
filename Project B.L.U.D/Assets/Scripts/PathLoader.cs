@@ -4,49 +4,57 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PathLoader : MonoBehaviour {
+public class PathLoader : MonoBehaviour
+{
 
-	public int level;
-	public int spawnset;
+    public int level;
     public bool loadLevel;
-	public float proximity;
-	public Sprite Glow;
-	public Sprite NoGlow;
+    public float proximity;
+    public Sprite Glow;
+    public Sprite NoGlow;
     public Text text;
     string objectText = "Dis is lamp";
+    bool clicked;
 
-	void Start(){
-		
-	}
-
-	void Update(){
-		if (CheckCloseTo ("Player", proximity)) {
-			this.gameObject.GetComponent<SpriteRenderer> ().sprite = Glow;
-			if(Input.GetMouseButton(0))
-			{
-				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().spawnlocation = spawnset;
-				SceneManager.LoadScene (level);
-				Debug.Log ("hi");
-			}
-		}
-
-		else {
-			this.gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
-		}
-	}
-
-
-	bool CheckCloseTo(string tag, float minimumDistance){
-		GameObject goWithTag = GameObject.FindGameObjectWithTag (tag);
-		if (Vector3.Distance (transform.position, goWithTag.transform.position) <= minimumDistance)
-			return true;
-		else
-			return false;
-	}
-
-    void textFade()
+    void Update()
     {
-       
-        
+        if (clicked && CheckCloseTo("Player", proximity))
+        {
+            text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
+            // fades text in and out based on distance between player and object
+            gameObject.GetComponent<SpriteRenderer>().sprite = Glow;
+            text.text = objectText;
+        }
+
+        else {
+            clicked = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
+            text.text = "";
+        }
+    }
+
+
+    void OnMouseDown()
+    {
+        if (CheckCloseTo("Player", proximity))
+        {
+            clicked = true;
+            print("hi");
+            text.text = objectText;
+            if (loadLevel == true)
+                SceneManager.LoadScene(level);
+        }
+    }
+
+
+    bool CheckCloseTo(string tag, float minimumDistance)
+    {
+        GameObject[] goWithTag = GameObject.FindGameObjectsWithTag(tag);
+        for (int i = 0; i < goWithTag.Length; ++i)
+        {
+            if (Vector3.Distance(transform.position, goWithTag[i].transform.position) <= minimumDistance)
+                return true;
+        }
+        return false;
     }
 }
