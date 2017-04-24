@@ -39,8 +39,6 @@ public class PathLoader : MonoBehaviour
         if (CheckCloseTo("Player", proximity))
         {
             clicked = true;
-            print("hi");
-            text.text = objectText;
             if (loadLevel == true)
                 SceneManager.LoadScene(level);
         }
