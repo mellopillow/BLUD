@@ -5,7 +5,7 @@
 		_MainTex ("Texture", 2D) = "white" {}
 		_CenterX ("Center X", Range(0.0, 0.5)) = 0.25
 		_CenterY ("Center Y", Range(0.0, 0.5)) = 0.25
-		_Radius ("Radius", Range(0.01, 0.5)) = 0.1
+		_Radius ("Radius", Range(0.01, 1.0)) = 1.0
 		_Sharpness ("Sharpness", Range(1, 20)) = 1
 	}
 	SubShader

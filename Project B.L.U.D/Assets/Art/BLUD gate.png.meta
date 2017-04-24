@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: d08df45d4456e6643862400ba86160fc
-timeCreated: 1488353277
+timeCreated: 1492983549
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BLUD gate_0
+    21300002: BLUD gate_1
+    21300004: BLUD gate_2
+    21300006: BLUD gate_3
+    21300008: BLUD gate_4
+    21300010: BLUD gate_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,9 +40,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -58,9 +64,95 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BLUD gate_0
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 236
+        width: 223
+        height: 1875
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BLUD gate_1
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 1449
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BLUD gate_2
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 91
+        width: 350
+        height: 2186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BLUD gate_3
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 159
+        width: 770
+        height: 1992
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BLUD gate_4
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 43
+        width: 838
+        height: 2217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BLUD gate_5
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 152
+        width: 823
+        height: 2175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

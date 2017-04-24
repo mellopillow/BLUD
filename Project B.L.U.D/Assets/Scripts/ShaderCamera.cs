@@ -26,6 +26,7 @@ public class ShaderCamera : MonoBehaviour
         float yPos = (Screen.height - playerPosScreen.y) / Screen.height * (0.5f * 9)/16;
         Mat.SetFloat(Shader.PropertyToID("_CenterX"), xPos);
         Mat.SetFloat(Shader.PropertyToID("_CenterY"), yPos);
+		Mat.SetFloat (Shader.PropertyToID ("_Radius"), 0.5f);
     }
 
     public void OnRenderImage(RenderTexture source, RenderTexture destination)
