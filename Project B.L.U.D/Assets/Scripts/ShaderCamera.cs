@@ -5,6 +5,10 @@ public class ShaderCamera : MonoBehaviour
 {
     public Material Mat;
     private Transform playerTransform;
+    private bool isMin = false;
+    public float max_light = 0.5f;
+    public float decrease_rate = .01f;
+    public float min_light = 0.05f;
     //GameObject player;
     void Start()
     {
@@ -25,8 +29,18 @@ public class ShaderCamera : MonoBehaviour
         float xPos = playerPosScreen.x / Screen.width * 0.5f;
         float yPos = (Screen.height - playerPosScreen.y) / Screen.height * (0.5f * 9)/16;
         Mat.SetFloat(Shader.PropertyToID("_CenterX"), xPos);
-        Mat.SetFloat(Shader.PropertyToID("_CenterY"), yPos);
-		Mat.SetFloat (Shader.PropertyToID ("_Radius"), 0.5f);
+        Mat.SetFloat(Shader.PropertyToID("_CenterY"), yPos - .04f);
+        if (!isMin)
+        {
+            max_light -= decrease_rate * Time.deltaTime;
+            Mat.SetFloat(Shader.PropertyToID("_Radius"), max_light);
+            //Debug.Log(max_light);
+            if (max_light < min_light)
+            {
+                Debug.Log("im inside");
+                isMin = true;
+            }
+        }
     }
 
     public void OnRenderImage(RenderTexture source, RenderTexture destination)
