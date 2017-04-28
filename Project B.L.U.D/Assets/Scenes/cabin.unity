@@ -920,7 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 6
-  spawnset: 0
+  SpawnPoint: 0
   loadLevel: 1
   proximity: 7
   Glow: {fileID: 21300000, guid: 4bdc613166443e748842acdbdae44a89, type: 3}
@@ -1653,6 +1653,11 @@ Prefab:
         type: 2}
       propertyPath: level
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
+        type: 2}
+      propertyPath: SpawnPoint
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59b477464c5f88f46b389bedf2660bad, type: 2}

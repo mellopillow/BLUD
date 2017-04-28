@@ -8,51 +8,50 @@ public class PathLoader : MonoBehaviour
 {
 
     public int level;
+	public int SpawnPoint;
     public bool loadLevel;
     public float proximity;
     public Sprite Glow;
     public Sprite NoGlow;
     public Text text;
     string objectText = "Dis is lamp";
-    bool clicked;
+    //bool clicked;
 
-    void Update()
-    {
-        if (clicked && CheckCloseTo("Player", proximity))
-        {
-            text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
-            // fades text in and out based on distance between player and object
-            gameObject.GetComponent<SpriteRenderer>().sprite = Glow;
-            text.text = objectText;
-        }
+    void Update(){
+       
+		if (Input.GetKeyDown ("space")){
+			if (CheckCloseTo("Player", proximity))
+			{
+				//clicked = true;
+				if (loadLevel == true) {
+					GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().spawnlocation = SpawnPoint;
+					SceneManager.LoadScene (level);
+				}
+			}
+		}
 
-        else {
-            clicked = false;
-            gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
-            text.text = "";
-        }
-    }
+		if (CheckCloseTo("Player", proximity))
+		{
+			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
+			// fades text in and out based on distance between player and object
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = Glow;
+			text.text = objectText;
+		}
 
-
-    void OnMouseDown()
-    {
-        if (CheckCloseTo("Player", proximity))
-        {
-            clicked = true;
-            if (loadLevel == true)
-                SceneManager.LoadScene(level);
-        }
+		else {
+			//clicked = false;
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
+			text.text = "";
+		}
     }
 
 
     bool CheckCloseTo(string tag, float minimumDistance)
     {
-        GameObject[] goWithTag = GameObject.FindGameObjectsWithTag(tag);
-        for (int i = 0; i < goWithTag.Length; ++i)
-        {
-            if (Vector3.Distance(transform.position, goWithTag[i].transform.position) <= minimumDistance)
-                return true;
-        }
-        return false;
+        GameObject goWithTag = GameObject.FindGameObjectWithTag(tag);
+		if (Vector3.Distance (transform.position, goWithTag.transform.position) <= minimumDistance)
+			return true;
+		else
+			return false;
     }
 }
