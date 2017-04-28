@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance = null;
 
-    void Start()
+    void Awake()
     {
         //Check for AudioManager
         if (instance == null)
@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
 
         //Use if you don't want to destroy between scenes.
         DontDestroyOnLoad(this.gameObject);
+       
     }
 
     public void PlaySFXClip(AudioClip clip)
