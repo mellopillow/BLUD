@@ -25,9 +25,9 @@ public class AudioManager : MonoBehaviour
        
     }
 
-    public void PlaySFXClip(AudioClip clip)
+    public void PlaySFXClip(AudioClip clip, float volume)
     {
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip, volume);
     }
 
     //Note: AudioManager is set to only play one song at a time

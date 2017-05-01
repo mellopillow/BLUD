@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour {
     Rigidbody2D playerRB;
     public Animator animator;
 	public int spawnlocation = 0;
+    public AudioManager audioManager;
+    public AudioClip footSteps;
     
 
 	void Start () {
@@ -53,5 +55,11 @@ public class PlayerMovement : MonoBehaviour {
 			animator.SetInteger("Direction", 0);
         }
        
+    }
+
+    void PlaySound()
+    {
+        audioManager.SetSFXVolume(.5f);
+        audioManager.PlaySFXClip(footSteps, .3f);
     }
 }

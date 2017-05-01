@@ -7,6 +7,7 @@ public class ShaderCamera : MonoBehaviour
     private Transform playerTransform;
     private bool isMin = false;
     public float max_light = 0.5f;
+    public static float current_light = 0.5f;
     public float decrease_rate = .01f;
     public float min_light = 0.05f;
     //GameObject player;
@@ -32,10 +33,10 @@ public class ShaderCamera : MonoBehaviour
         Mat.SetFloat(Shader.PropertyToID("_CenterY"), yPos - .04f);
         if (!isMin)
         {
-            max_light -= decrease_rate * Time.deltaTime;
-            Mat.SetFloat(Shader.PropertyToID("_Radius"), max_light);
+            current_light -= decrease_rate * Time.deltaTime;
+            Mat.SetFloat(Shader.PropertyToID("_Radius"), current_light);
             //Debug.Log(max_light);
-            if (max_light < min_light)
+            if (current_light < min_light)
             {
                 Debug.Log("im inside");
                 isMin = true;
