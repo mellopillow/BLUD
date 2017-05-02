@@ -11,7 +11,10 @@ public class EnemySpawner : MonoBehaviour {
     public Transform[] triggerLocations;
     double timer;
     public static bool spawned = false;
-
+    public AudioManager audioManager;
+    public AudioClip clip;
+    public bool playedSFX = true;
+    public AudioClip clip2;
 
     void Spawn()
     {
@@ -60,6 +63,13 @@ public class EnemySpawner : MonoBehaviour {
 	void Update () {
         spawnLocation = GameObject.FindGameObjectWithTag("Player").transform;
         //TriggerSpawn();
+        if (spawned && playedSFX)
+        {
+            audioManager.PlaySFXClip(clip, .6f);
+            playedSFX = false;
+            audioManager.StopMusic();
+            audioManager.PlayMusic(clip2);
+        }
 
     }
 

@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void PlaySound()
     {
-        audioManager.SetSFXVolume(.5f);
-        audioManager.PlaySFXClip(footSteps, .3f);
+        //audioManager.SetSFXVolume(.5f);
+        audioManager.PlaySFXClip(footSteps, .6f);
     }
 }
