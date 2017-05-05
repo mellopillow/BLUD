@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour {
+public class Fridge : MonoBehaviour {
 
-	public float proximity;
+	public GameObject fridge2;
+	public GameObject critter1;
+	public GameObject door1;
+	public GameObject door2;
+	public int proximity;
 
-	// Use this for initialization
-	void Start () {
-		
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("space")){
 			if (CheckCloseTo ("Player", proximity)) {
-				Debug.Log ("hello");
-				ItemScript.key = true;
+				this.gameObject.SetActive (false);
+				door1.SetActive (false);
+				fridge2.SetActive(true);
+				critter1.SetActive(true);
+				door2.SetActive (true);
+				ItemScript.chainsaw = true;
 			}		
 		}
 	}

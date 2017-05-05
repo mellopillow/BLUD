@@ -5,10 +5,10 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour {
 
 	public static bool key = false;
-	bool chainsaw = false;
-	bool slingshot = false;
-	bool first_critter = false;
-	bool second_critter = false;
+	public static bool chainsaw = false;
+	public static bool slingshot = false;
+	public static bool first_critter = false;
+	public static bool second_critter = false;
 
 	// Use this for initialization
 	void Start () {

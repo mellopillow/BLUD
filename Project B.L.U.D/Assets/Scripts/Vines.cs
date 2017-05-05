@@ -2,22 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour {
+public class Vines : MonoBehaviour {
 
 	public float proximity;
 
-	// Use this for initialization
-	void Start () {
-		
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("space")){
 			if (CheckCloseTo ("Player", proximity)) {
-				Debug.Log ("hello");
-				ItemScript.key = true;
+				if (ItemScript.chainsaw == true) {
+					this.gameObject.SetActive (false);
+				}
 			}		
 		}
 	}
