@@ -11,8 +11,8 @@ public class PlayerMovement : MonoBehaviour {
     Rigidbody2D playerRB;
     public Animator animator;
 	public int spawnlocation = 0;
-    public AudioManager audioManager;
-    public AudioClip footSteps;
+    public AudioClip footsteps;
+    
     
 
 	void Start () {
@@ -60,6 +60,6 @@ public class PlayerMovement : MonoBehaviour {
     void PlaySound()
     {
         //audioManager.SetSFXVolume(.5f);
-        audioManager.PlaySFXClip(footSteps, .6f);
+        AudioManager.instance.PlaySFXClip(footsteps, .6f);
     }
 }

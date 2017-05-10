@@ -11,7 +11,6 @@ public class EnemySpawner : MonoBehaviour {
     public Transform[] triggerLocations;
     double timer;
     public static bool spawned = false;
-    public AudioManager audioManager;
     public AudioClip clip;
     public bool playedSFX = true;
     public AudioClip clip2;
@@ -65,10 +64,10 @@ public class EnemySpawner : MonoBehaviour {
         //TriggerSpawn();
         if (spawned && playedSFX)
         {
-            audioManager.PlaySFXClip(clip, .6f);
+            AudioManager.instance.PlaySFXClip(clip, .6f);
             playedSFX = false;
-            audioManager.StopMusic();
-            audioManager.PlayMusic(clip2);
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.PlayMusic(clip2);
         }
 
     }
