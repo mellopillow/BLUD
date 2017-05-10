@@ -5,11 +5,11 @@ public class ShaderCamera : MonoBehaviour
 {
     public Material Mat;
     private Transform playerTransform;
-    private bool isMin = false;
-    public float max_light = 0.5f;
-    public static float current_light = 0.5f;
-    public float decrease_rate = .01f;
-    public float min_light = 0.05f;
+    //private bool isMin = false;
+    //public float max_light = 0.5f;
+    //public static float current_light = 0.5f;
+    //public float decrease_rate = .01f;
+    //public float min_light = 0.05f;
     //GameObject player;
     void Start()
     {
@@ -21,6 +21,18 @@ public class ShaderCamera : MonoBehaviour
 
     public void Update()
     {
+        if (ItemScript.battery_count > 0)
+        {
+            if (Input.GetKeyDown("e"))
+            {
+                ItemScript.isMin = false;
+                while (ItemScript.current_light < ItemScript.max_light)
+                {
+                    ItemScript.current_light += .008f * Time.deltaTime;
+                    Mat.SetFloat(Shader.PropertyToID("_Radius"), ItemScript.current_light);
+                }
+            }
+        }
         Vector3 mousePos = Input.mousePosition;
         //Debug.Log(mousePos);
         Vector3 playerPos = playerTransform.position;
@@ -31,15 +43,15 @@ public class ShaderCamera : MonoBehaviour
         float yPos = (Screen.height - playerPosScreen.y) / Screen.height * (0.5f * 9)/16;
         Mat.SetFloat(Shader.PropertyToID("_CenterX"), xPos);
         Mat.SetFloat(Shader.PropertyToID("_CenterY"), yPos - .04f);
-        if (!isMin)
+        if (!ItemScript.isMin)
         {
-            current_light -= decrease_rate * Time.deltaTime;
-            Mat.SetFloat(Shader.PropertyToID("_Radius"), current_light);
+            ItemScript.current_light -= ItemScript.decrease_rate * Time.deltaTime;
+            Mat.SetFloat(Shader.PropertyToID("_Radius"), ItemScript.current_light);
             //Debug.Log(max_light);
-            if (current_light < min_light)
+            if (ItemScript.current_light < ItemScript.min_light)
             {
                 Debug.Log("im inside");
-                isMin = true;
+                ItemScript.isMin = true;
             }
         }
     }

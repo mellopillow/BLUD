@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ItemScript : MonoBehaviour {
 
-	public static bool key = false;
+    public static ItemScript items = null;
+
+    public static bool key = false;
 	public static bool chainsaw = false;
 	public static bool slingshot = false;
 	public static bool first_critter = false;
@@ -16,9 +18,9 @@ public class ItemScript : MonoBehaviour {
     public static float current_light = 0.5f;
     public static float decrease_rate = .01f;
     public static float min_light = 0.05f;
-    private static bool isMin = false;
+    public static bool isMin = false;
 
-    public static ItemScript items = null;
+    
 
     // Use this for initialization
     void Awake () {
@@ -35,4 +37,14 @@ public class ItemScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void incBattery()
+    {
+        battery_count++;
+    }
+
+    public void decBattery()
+    {
+        battery_count--;
+    }
 }

@@ -17,6 +17,7 @@ public class PathLoader : MonoBehaviour
     LoadText load;
     public string objectText = "Dis is lamp";
     //bool clicked;
+    public bool isBattery = false;
 
     void Start()
     {
@@ -36,6 +37,11 @@ public class PathLoader : MonoBehaviour
 					GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().spawnlocation = SpawnPoint;
 					SceneManager.LoadScene (LevelToLoad);
 				}
+                if (isBattery)
+                {
+                    ItemScript.items.incBattery();
+                    isBattery = false; // only get battery once
+                }
 			}
 		}
 
