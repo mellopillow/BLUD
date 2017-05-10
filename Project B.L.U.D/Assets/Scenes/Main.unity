@@ -1077,12 +1077,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 2
-  loadLevel: 0
-  proximity: 25
-  Glow: {fileID: 21300000, guid: ef77352b3d41e704e934928474425ee9, type: 3}
-  NoGlow: {fileID: 21300000, guid: 267cc306fe4f0e646a476632b35a8065, type: 3}
-  text: {fileID: 457845848}
+  LevelToLoad: 2
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 20
+  BaseImage: {fileID: 21300000, guid: 267cc306fe4f0e646a476632b35a8065, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: ef77352b3d41e704e934928474425ee9, type: 3}
+  objectText: Dis is lamp
 --- !u!61 &421823190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1192,9 +1193,10 @@ GameObject:
   - component: {fileID: 457845847}
   - component: {fileID: 457845849}
   - component: {fileID: 457845848}
+  - component: {fileID: 457845850}
   m_Layer: 5
   m_Name: GameText
-  m_TagString: Untagged
+  m_TagString: text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1256,6 +1258,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457845846}
+--- !u!114 &457845850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 457845846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e85f7ad906e854cad6532e26d57da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingTime: 1
 --- !u!1 &482713119
 GameObject:
   m_ObjectHideFlags: 0

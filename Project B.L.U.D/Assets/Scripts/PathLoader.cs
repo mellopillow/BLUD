@@ -7,41 +7,48 @@ using UnityEngine.UI;
 public class PathLoader : MonoBehaviour
 {
 
-    public int level;
+    public int LevelToLoad;
 	public int SpawnPoint;
-    public bool loadLevel;
-    public float proximity;
-    public Sprite Glow;
-    public Sprite NoGlow;
-    public Text text;
-    string objectText = "Dis is lamp";
+    public bool LoadLevel;
+    public float ActivationProximity;
+    public Sprite BaseImage;
+    public Sprite ActivatedImage;
+    Text text;
+    LoadText load;
+    public string objectText = "Dis is lamp";
     //bool clicked;
+
+    void Start()
+    {
+        text = GameObject.FindWithTag("text").GetComponent<Text>();
+        load = GameObject.FindWithTag("text").GetComponent<LoadText>();
+    }
 
     void Update(){
        
 		if (Input.GetKeyDown ("space")){
-			if (CheckCloseTo("Player", proximity))
+			if (CheckCloseTo("Player", ActivationProximity))
 			{
-				//clicked = true;
-				if (loadLevel == true) {
+                load.load(objectText);
+                gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
+                //clicked = true;
+                if (LoadLevel == true) {
 					GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().spawnlocation = SpawnPoint;
-					SceneManager.LoadScene (level);
+					SceneManager.LoadScene (LevelToLoad);
 				}
 			}
 		}
 
-		if (CheckCloseTo("Player", proximity))
+		if (CheckCloseTo("Player", ActivationProximity))
 		{
-			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / proximity)));
+			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity)));
 			// fades text in and out based on distance between player and object
-			this.gameObject.GetComponent<SpriteRenderer>().sprite = Glow;
-			text.text = objectText;
 		}
 
 		else {
 			//clicked = false;
-			this.gameObject.GetComponent<SpriteRenderer>().sprite = NoGlow;
-			text.text = "";
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = BaseImage;
+            load.load("");
 		}
     }
 
