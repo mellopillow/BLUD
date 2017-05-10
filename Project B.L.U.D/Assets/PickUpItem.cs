@@ -23,6 +23,12 @@ public class PickUpItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("space"))
+        {
+            PickedUp = true;
+            PickUp();
+        }
+           
         if (PickedUp)
             timer += Time.deltaTime;
         if (timer > 3)
@@ -33,11 +39,7 @@ public class PickUpItem : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
-    {
-        PickedUp = true;
-        PickUp();
-    }
+   
 
     void PickUp()
     {
