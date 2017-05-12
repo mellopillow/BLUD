@@ -581,9 +581,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mat: {fileID: 2100000, guid: 0a35388e60718e741838e3e021b18cab, type: 2}
-  max_light: 0.34032425
-  decrease_rate: 0.001
-  min_light: 0.05
 --- !u!114 &265056082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,7 +1002,15 @@ MonoBehaviour:
   ActivationProximity: 20
   BaseImage: {fileID: 21300000, guid: 267cc306fe4f0e646a476632b35a8065, type: 3}
   ActivatedImage: {fileID: 21300000, guid: ef77352b3d41e704e934928474425ee9, type: 3}
+  ot:
+  - This is a test of the new text system.
+  - Bla bla bla this is lamp bla bla bla.
+  - Bla bla bla this is lamp bla bla bla.
+  - Bla bla bla this is lamp bla bla bla.
   objectText: Dis is lamp
+  StopMovement: 1
+  StopTime: 2
+  isBattery: 0
 --- !u!61 &421823190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1192,6 +1197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingTime: 1
+  TimeBetween: 2
 --- !u!1 &482713119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,6 +1665,31 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!1 &651355677 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1302174598230686, guid: 1c5f98f903513cd4aa6f343666cea5ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1613111116}
+--- !u!114 &651355678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651355677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6afb3656e8ab9342a58fbb958701e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0.3
+  animator: {fileID: 651355680}
+  spawnlocation: 0
+  footsteps: {fileID: 0}
+--- !u!95 &651355680 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95715096170911440, guid: 1c5f98f903513cd4aa6f343666cea5ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1613111116}
 --- !u!1 &682084132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,7 +2605,8 @@ Prefab:
       propertyPath: footsteps
       value: 
       objectReference: {fileID: 8300000, guid: a2ff8301dc9eedb45af84ea91ad3a6eb, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114623382374185370, guid: 1c5f98f903513cd4aa6f343666cea5ca, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1c5f98f903513cd4aa6f343666cea5ca, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1713892587 stripped

@@ -15,8 +15,11 @@ public class PathLoader : MonoBehaviour
     public Sprite ActivatedImage;
     Text text;
     LoadText load;
+    public string[] ot;
     public string objectText = "Dis is lamp";
     //bool clicked;
+    public bool StopMovement;
+    public float StopTime = 2f;
     public bool isBattery = false;
 
     void Start()
@@ -27,10 +30,10 @@ public class PathLoader : MonoBehaviour
 
     void Update(){
        
-		if (Input.GetKeyDown ("space")){
+		if (Input.GetKeyDown ("space") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
-                load.load(objectText);
+                load.LoadArray(ot);
                 gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
                 //clicked = true;
                 if (LoadLevel == true) {
@@ -54,7 +57,7 @@ public class PathLoader : MonoBehaviour
 		else {
 			//clicked = false;
 			this.gameObject.GetComponent<SpriteRenderer>().sprite = BaseImage;
-            load.load("");
+            //load.load("");
 		}
     }
 
