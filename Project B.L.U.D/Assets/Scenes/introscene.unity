@@ -872,6 +872,21 @@ Prefab:
       propertyPath: m_TagString
       value: MainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 20155551520933392, guid: bc129b4e7a87f084781baa06a5e984b5,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.03676468
+      objectReference: {fileID: 0}
+    - target: {fileID: 20155551520933392, guid: bc129b4e7a87f084781baa06a5e984b5,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.036224023
+      objectReference: {fileID: 0}
+    - target: {fileID: 20155551520933392, guid: bc129b4e7a87f084781baa06a5e984b5,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.036224023
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}
   m_IsPrefabParent: 0
@@ -1638,6 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingTime: 0
+  TimeBetween: 2
 --- !u!1 &1311887297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6afb3656e8ab9342a58fbb958701e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0.3
+  MoveSpeed: 0.3
   animator: {fileID: 1372223924}
   spawnlocation: 0
   footsteps: {fileID: 8300000, guid: a2ff8301dc9eedb45af84ea91ad3a6eb, type: 3}
@@ -1918,7 +1934,7 @@ Prefab:
     - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
         type: 2}
