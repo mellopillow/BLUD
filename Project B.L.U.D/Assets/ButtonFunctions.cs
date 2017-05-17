@@ -15,4 +15,5 @@ public class ButtonFunctions : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
     }
+
 }

@@ -6,6 +6,6 @@ public class DontDestroyOnLoad : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		DontDestroyOnLoad (this);
+		//DontDestroyOnLoad (this);
 	}
 }

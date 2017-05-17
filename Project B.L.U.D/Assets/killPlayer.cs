@@ -10,7 +10,6 @@ public class killPlayer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //Destroy(other.gameObject);
             SceneManager.LoadScene(LevelToLoad);
         }
         

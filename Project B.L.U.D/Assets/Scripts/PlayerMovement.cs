@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour {
     
 
 	void Start () {
+        
         //frames = 0;
         def = MoveSpeed;
         playerRB = GetComponent<Rigidbody2D>();

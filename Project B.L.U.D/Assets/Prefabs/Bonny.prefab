@@ -23,8 +23,6 @@ GameObject:
   - component: {fileID: 61985167505220100}
   - component: {fileID: 212688080329807066}
   - component: {fileID: 95715096170911440}
-  - component: {fileID: 114748765103224548}
-  - component: {fileID: 114623382374185370}
   - component: {fileID: 114142623921746290}
   - component: {fileID: 114359166901625442}
   m_Layer: 9
@@ -41,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302174598230686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.5, y: -11.5, z: 0}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -135,29 +133,6 @@ MonoBehaviour:
   animator: {fileID: 95715096170911440}
   spawnlocation: 0
   footsteps: {fileID: 8300000, guid: a2ff8301dc9eedb45af84ea91ad3a6eb, type: 3}
---- !u!114 &114623382374185370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1302174598230686}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 816034745165b66419dcca346bf16f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 95715096170911440}
---- !u!114 &114748765103224548
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1302174598230686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d7c6aa23b937cd4e85aa01a34293948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212688080329807066
 SpriteRenderer:
   m_ObjectHideFlags: 1

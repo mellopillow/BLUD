@@ -15,14 +15,13 @@ public class LoadText : MonoBehaviour {
     string[] Sequence;
     int CurSentence = -1;
     bool SpacePressed;
-    public GameObject player;
 
     public void LoadArray(string[] text)
     {
         started = true;
         print("loading");
         first = true;
-        player.GetComponent<PlayerMovement>().freeze();
+        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().freeze();
         print("Freeze");
         SpacePressed = true;
         CurSentence = 0;
@@ -77,7 +76,7 @@ public class LoadText : MonoBehaviour {
                 if (CurSentence >= Sequence.Length)
                 {
                     GetComponent<Text>().text = "";
-                    player.GetComponent<PlayerMovement>().unfreeze();
+                    GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().unfreeze();
                     print("Unfreeze"); 
                 }
             }

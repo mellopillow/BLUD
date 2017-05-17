@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
             Destroy(this.gameObject);
 
         //Use if you don't want to destroy between scenes.
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
        
     }
 

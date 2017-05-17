@@ -30,7 +30,7 @@ public class ItemScript : MonoBehaviour {
             Destroy(this.gameObject);
 
         //Use if you don't want to destroy between scenes.
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 	
 	// Update is called once per frame
