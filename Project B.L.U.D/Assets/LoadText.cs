@@ -5,39 +5,32 @@ using UnityEngine.UI;
 
 public class LoadText : MonoBehaviour {
 
+    bool first = true;
     bool loading;
-    bool done;
     float timer = 0;
-    float btimer = 0;
-    int current = 0;
+    int CurLetter = 0;
     public float loadingTime;
-    string t="";
-    string[] ot;
-    int CurElement = 0;
-    public float TimeBetween = 2f;
+    string CurrentWord ="";
+    string[] Sequence;
+    int CurSentence = -1;
     bool SpacePressed;
 
     public void LoadArray(string[] text)
     {
+        first = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().freeze();
         SpacePressed = true;
-        CurElement = 0;
-        ot = text;
-        if(ot.Length>0)
-            load(ot[CurElement]);
+        CurSentence = 0;
+        Sequence = text;
+        if(Sequence.Length>0)
+            load(Sequence[CurSentence]);
     }
     public void load(string text)
     {
-        clear();
+        CurrentWord = "";
         loading = true;
-        t = text;
-        current = 0;
-    }
-
-    public void clear()
-    {
-        t = "";
-        loading = false;
+        CurrentWord = text;
+        CurLetter = 0;
     }
 
     void Start()
@@ -49,40 +42,44 @@ public class LoadText : MonoBehaviour {
     {
         if (SpacePressed)
         {
-            if (loading & current <= t.Length & CurElement < ot.Length)
+            if (Input.GetKeyDown("space") && !first)
+            {
+                print("hello");
+                CurLetter = CurrentWord.Length;
+            }
+            if (loading & CurLetter <= CurrentWord.Length & CurSentence < Sequence.Length)
             {
                 timer += Time.deltaTime;
-                if (timer > (loadingTime / t.Length))
+                if (timer > (loadingTime / CurrentWord.Length))
                 {
-                    GetComponent<Text>().text = t.Substring(0, current);
-                    current++;
+                    GetComponent<Text>().text = CurrentWord.Substring(0, CurLetter);
+                    CurLetter++;
                     timer = 0f;
                 }
             }
             else {
                 loading = false;
                 SpacePressed = false;
-                if (++CurElement < ot.Length)
-                    load(ot[CurElement]);
+                if (++CurSentence < Sequence.Length)
+                    load(Sequence[CurSentence]);
             }
+            first = false;
         }
-        else
-        {
+        else {
             if (Input.GetKeyDown("space"))
             {
                 SpacePressed = true;
-                if (CurElement >= ot.Length)
+                if (CurSentence >= Sequence.Length)
                 {
                     GetComponent<Text>().text = "";
                     GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().unfreeze();
                 }
             }
-
         }
     }
 
     public bool isLoading()
     {
-        return CurElement>0 && CurElement<ot.Length+1;
+        return CurSentence>=0 && CurSentence<Sequence.Length+1;
     }
 }

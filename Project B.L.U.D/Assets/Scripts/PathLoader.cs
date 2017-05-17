@@ -28,12 +28,18 @@ public class PathLoader : MonoBehaviour
         load = GameObject.FindWithTag("text").GetComponent<LoadText>();
     }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2);
+    }
+
     void Update(){
        
 		if (Input.GetKeyDown ("space") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
                 load.LoadArray(ot);
+                StartCoroutine(Wait());
                 gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
                 //clicked = true;
                 if (LoadLevel == true) {
