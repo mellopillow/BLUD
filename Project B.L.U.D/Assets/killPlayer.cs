@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class killPlayer : MonoBehaviour
 {
-    public Text gameOverText;
+    public int LevelToLoad;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            SceneManager.LoadScene(LevelToLoad);
         }
-
+        
     }
 }

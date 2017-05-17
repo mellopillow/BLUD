@@ -5,7 +5,7 @@ using System.Diagnostics;
 public class PlayerMovement : MonoBehaviour {
 
     // Use this for initialization
-    public float MoveSpeed = .078f;
+    public float MoveSpeed = .3f;
     float def;
     //float smoothing, frames;
     Vector3 velocity;
@@ -72,11 +72,13 @@ public class PlayerMovement : MonoBehaviour {
 
     public void freeze()
     {
+        print("frozen");
         frozen = true;
-        MoveSpeed = 0f;
+        MoveSpeed = 0;
     }
     public void unfreeze()
     {
+        print("unfrozen");
         frozen = false;
         MoveSpeed = def;
     }

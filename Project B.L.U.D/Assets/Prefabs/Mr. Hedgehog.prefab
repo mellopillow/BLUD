@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212441656436028306}
   - component: {fileID: 114619957414091348}
   - component: {fileID: 61158346707625158}
+  - component: {fileID: 114976751716912304}
   m_Layer: 0
   m_Name: Mr. Hedgehog
   m_TagString: Untagged
@@ -79,6 +80,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!114 &114976751716912304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1097456467375526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2361721c53ba083478fa0cbe081884d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 10
 --- !u!212 &212441656436028306
 SpriteRenderer:
   m_ObjectHideFlags: 1

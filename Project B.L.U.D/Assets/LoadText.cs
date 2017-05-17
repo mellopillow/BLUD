@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LoadText : MonoBehaviour {
 
+    bool started;
     bool first = true;
     bool loading;
     float timer = 0;
@@ -14,11 +15,15 @@ public class LoadText : MonoBehaviour {
     string[] Sequence;
     int CurSentence = -1;
     bool SpacePressed;
+    public GameObject player;
 
     public void LoadArray(string[] text)
     {
+        started = true;
+        print("loading");
         first = true;
-        GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().freeze();
+        player.GetComponent<PlayerMovement>().freeze();
+        print("Freeze");
         SpacePressed = true;
         CurSentence = 0;
         Sequence = text;
@@ -66,13 +71,14 @@ public class LoadText : MonoBehaviour {
             first = false;
         }
         else {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown("space") && started)
             {
                 SpacePressed = true;
                 if (CurSentence >= Sequence.Length)
                 {
                     GetComponent<Text>().text = "";
-                    GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().unfreeze();
+                    player.GetComponent<PlayerMovement>().unfreeze();
+                    print("Unfreeze"); 
                 }
             }
         }

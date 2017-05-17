@@ -16,10 +16,7 @@ public class PathLoader : MonoBehaviour
     Text text;
     LoadText load;
     public string[] ot;
-    public string objectText = "Dis is lamp";
     //bool clicked;
-    public bool StopMovement;
-    public float StopTime = 2f;
     public bool isBattery = false;
 
     void Start()
@@ -28,18 +25,12 @@ public class PathLoader : MonoBehaviour
         load = GameObject.FindWithTag("text").GetComponent<LoadText>();
     }
 
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(2);
-    }
-
     void Update(){
        
 		if (Input.GetKeyDown ("space") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
                 load.LoadArray(ot);
-                StartCoroutine(Wait());
                 gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
                 //clicked = true;
                 if (LoadLevel == true) {
@@ -56,7 +47,7 @@ public class PathLoader : MonoBehaviour
 
 		if (CheckCloseTo("Player", ActivationProximity))
 		{
-			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity)));
+			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a /*- Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity))*/);
 			// fades text in and out based on distance between player and object
 		}
 

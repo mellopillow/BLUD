@@ -32,3 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/junkyard.unity
     guid: ebe40cecd26afbf4886260dd26f1e6ee
+  - enabled: 1
+    path: Assets/Scenes/therealintro.unity
+    guid: 6fd1ca3c3c6b84d47a17f673fb114a97
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6ad757ee8f99446468d97ab2051e5058

@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 95715096170911440}
   - component: {fileID: 114748765103224548}
   - component: {fileID: 114623382374185370}
+  - component: {fileID: 114142623921746290}
+  - component: {fileID: 114359166901625442}
   m_Layer: 9
   m_Name: Bonny
   m_TagString: Player
@@ -39,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302174598230686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40, y: -10, z: -1}
+  m_LocalPosition: {x: -56.5, y: -11.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,13 +109,39 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114623382374185370
+--- !u!114 &114142623921746290
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302174598230686}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d0c6d1ce82d5c4fb18bb1351a26d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114359166901625442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302174598230686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6afb3656e8ab9342a58fbb958701e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0.3
+  animator: {fileID: 95715096170911440}
+  spawnlocation: 0
+  footsteps: {fileID: 8300000, guid: a2ff8301dc9eedb45af84ea91ad3a6eb, type: 3}
+--- !u!114 &114623382374185370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302174598230686}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 816034745165b66419dcca346bf16f2f, type: 3}
   m_Name: 
