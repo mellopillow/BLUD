@@ -1,9 +1,25 @@
 fileFormatVersion: 2
 guid: f14bfb6c97c8447468864f77468c2c90
-timeCreated: 1485995709
+timeCreated: 1495098310
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: 223_276_Blood-Sprite-Sheet-1024sq_0
+    21300002: 223_276_Blood-Sprite-Sheet-1024sq_1
+    21300004: 223_276_Blood-Sprite-Sheet-1024sq_2
+    21300006: 223_276_Blood-Sprite-Sheet-1024sq_3
+    21300008: 223_276_Blood-Sprite-Sheet-1024sq_4
+    21300010: 223_276_Blood-Sprite-Sheet-1024sq_5
+    21300012: 223_276_Blood-Sprite-Sheet-1024sq_6
+    21300014: 223_276_Blood-Sprite-Sheet-1024sq_7
+    21300016: 223_276_Blood-Sprite-Sheet-1024sq_8
+    21300018: 223_276_Blood-Sprite-Sheet-1024sq_9
+    21300020: 223_276_Blood-Sprite-Sheet-1024sq_10
+    21300022: 223_276_Blood-Sprite-Sheet-1024sq_11
+    21300024: 223_276_Blood-Sprite-Sheet-1024sq_12
+    21300026: 223_276_Blood-Sprite-Sheet-1024sq_13
+    21300028: 223_276_Blood-Sprite-Sheet-1024sq_14
+    21300030: 223_276_Blood-Sprite-Sheet-1024sq_15
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,11 +50,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.37691787, y: 0.63488454}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
@@ -58,9 +74,225 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 748.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 748.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 748.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_3
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 748.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 499.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 499.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_6
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 499.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_7
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 499.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 250.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 250.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_10
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 250.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_11
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 250.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_14
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 223_276_Blood-Sprite-Sheet-1024sq_15
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1.5
+        width: 255.75
+        height: 249.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

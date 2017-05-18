@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: 2332a76717681d645a97ad840c02f176
-timeCreated: 1494556695
+timeCreated: 1495101109
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: glowypathfixed_0
+    21300002: glowypathfixed_1
+    21300004: glowypathfixed_2
+    21300006: glowypathfixed_3
+    21300008: glowypathfixed_4
+    21300010: glowypathfixed_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -58,9 +64,156 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: glowypathfixed_0
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 771
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 28}
+        - {x: -19, y: -25.875002}
+        - {x: -17.203152, y: -28}
+        - {x: 15.023411, y: -28}
+        - {x: 19, y: -22.945314}
+        - {x: 19, y: 28}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: glowypathfixed_1
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 161
+        width: 2796
+        height: 2839
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -612.24603, y: 1419.5}
+        - {x: -536.07416, y: 1321.1562}
+        - {x: -486.26947, y: 849.4765}
+        - {x: -477.4804, y: 776.2343}
+        - {x: -474.55072, y: 773.3046}
+        - {x: -474.55072, y: 720.57025}
+        - {x: -474.55072, y: 767.44525}
+        - {x: -480.4101, y: 773.3046}
+        - {x: -486.26947, y: 814.32025}
+        - {x: -495.05853, y: 858.26556}
+        - {x: -515.56635, y: 902.2109}
+        - {x: -541.93353, y: 905.14056}
+        - {x: -1397.4023, y: -975.7188}
+        - {x: -1397.4023, y: -1136.8516}
+        - {x: -1192.3242, y: -1368.2969}
+        - {x: -193.30072, y: -1418.1017}
+        - {x: 1398, y: -1418.1017}
+        - {x: 1398, y: 975.45306}
+        - {x: 606.50397, y: 1419.5}
+      - - {x: 1010.80084, y: -506.9688}
+        - {x: 1010.80084, y: -547.98444}
+        - {x: 1025.4493, y: -553.8438}
+        - {x: 1045.9572, y: -553.8438}
+        - {x: 1045.9572, y: -536.2657}
+        - {x: 1019.5899, y: -504.03912}
+      - - {x: 1066.465, y: -451.30475}
+        - {x: 1069.3947, y: -463.0235}
+        - {x: 1081.1134, y: -474.74225}
+        - {x: 1089.9025, y: -471.81256}
+        - {x: 1089.9025, y: -463.0235}
+        - {x: 1078.1837, y: -445.44537}
+        - {x: 1072.3243, y: -445.44537}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: glowypathfixed_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 187
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93.5, y: 155.5}
+        - {x: -93.5, y: -155.42188}
+        - {x: 46.875, y: -155.42188}
+        - {x: 93.5, y: -149.5625}
+        - {x: 93.5, y: 137.54688}
+        - {x: 82.03125, y: 155.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: glowypathfixed_3
+      rect:
+        serializedVersion: 2
+        x: 5438
+        y: 103
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.894495, y: 16}
+        - {x: -6.824255, y: 15.109375}
+        - {x: -32, y: 0.46093762}
+        - {x: -32, y: -14.1875}
+        - {x: -30.261755, y: -16}
+        - {x: -0.96488, y: -16}
+        - {x: 32, y: 9.25}
+        - {x: 32, y: 16}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: glowypathfixed_4
+      rect:
+        serializedVersion: 2
+        x: 5560
+        y: 70
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.4765005, y: 3.5}
+        - {x: -3.4765005, y: -3.2421873}
+        - {x: 4.5, y: -3.2421873}
+        - {x: 4.5, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: glowypathfixed_5
+      rect:
+        serializedVersion: 2
+        x: 5513
+        y: 0
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.4412985, y: 30.5}
+        - {x: -28.504015, y: -16.113281}
+        - {x: -28.504015, y: -30.5}
+        - {x: 29, y: -30.5}
+        - {x: 29, y: 30.5}
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
