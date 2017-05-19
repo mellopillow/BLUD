@@ -5,7 +5,7 @@ namespace UnityStandardAssets._2D
 {
     public class Camera2DFollow : MonoBehaviour
     {
-        public Transform target;
+        Transform target;
         public float damping = 0;
         public float lookAheadFactor = 1;
         public float lookAheadReturnSpeed = 4.0f;
@@ -19,6 +19,7 @@ namespace UnityStandardAssets._2D
         // Use this for initialization
         private void Start()
         {
+            target = GameObject.FindWithTag("Player").transform;
 			if (target == null)
 				target = GameObject.FindGameObjectWithTag ("Player").transform;
 			r = target.position;

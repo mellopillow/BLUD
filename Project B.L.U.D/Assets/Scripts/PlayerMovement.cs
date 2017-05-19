@@ -76,6 +76,7 @@ public class PlayerMovement : MonoBehaviour {
         print("frozen");
         frozen = true;
         MoveSpeed = 0;
+        animator.SetInteger("Direction", 0);
     }
     public void unfreeze()
     {
