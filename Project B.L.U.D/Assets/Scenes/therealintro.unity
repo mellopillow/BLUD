@@ -1192,7 +1192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingTime: 1
-  player: {fileID: 0}
 --- !u!1 &482713119
 GameObject:
   m_ObjectHideFlags: 0
