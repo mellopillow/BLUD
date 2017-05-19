@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour {
 
+    public GameObject GameManager;
     // Use this for initialization
     public void Continue()
     {
@@ -14,6 +15,11 @@ public class ButtonFunctions : MonoBehaviour {
     public void Exit()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void Resume()
+    {
+        GameManager.GetComponent<GameManager>().Unpause();
     }
 
 }

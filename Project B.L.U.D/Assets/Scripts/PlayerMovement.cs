@@ -73,14 +73,12 @@ public class PlayerMovement : MonoBehaviour {
 
     public void freeze()
     {
-        print("frozen");
         frozen = true;
         MoveSpeed = 0;
         animator.SetInteger("Direction", 0);
     }
     public void unfreeze()
     {
-        print("unfrozen");
         frozen = false;
         MoveSpeed = def;
     }

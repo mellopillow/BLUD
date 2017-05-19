@@ -5,14 +5,19 @@ public class EnemyMovement : MonoBehaviour {
 
     // Use this for tialization
     public float speed;
+    Animator animator;
+    float def;
+    float MoveSpeed;
+    bool frozen;
     Rigidbody2D enemyRB;
     Vector3 velocity;
     Transform player, enemy;
     float h, h2, timer;
     
 	void Start () {
+        //animator = GetComponent<Animator>();   PUT THIS IN ONCE ENEMY HAS ANIMATOR
         timer = 0f;
-        speed = .0f;
+        MoveSpeed = 0f;
         enemyRB = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag ("Player").transform;
         enemy = this.transform;
@@ -29,12 +34,27 @@ public class EnemyMovement : MonoBehaviour {
 
     void Move()
     {
-        if (timer > .8f)
-            speed = .082f;
+        if (!frozen && timer > .8f)
+        {
+            MoveSpeed = speed;
+            def = speed;
+        }
         if (h > h2)
-            velocity.x = speed;
+            velocity.x = MoveSpeed;
         else
-            velocity.x = -speed;
+            velocity.x = -MoveSpeed;
         enemy.Translate(velocity);
+    }
+
+    public void freeze()
+    {
+        frozen = true;
+        MoveSpeed = 0;
+        //animator.SetInteger("Direction", 0);
+    }
+    public void unfreeze()
+    {
+        frozen = false;
+        MoveSpeed = def;
     }
 }
