@@ -337,12 +337,10 @@ MonoBehaviour:
   SpawnPoint: 0
   LoadLevel: 0
   ActivationProximity: 6
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
+  BaseImage: {fileID: 21300000, guid: 18d02814db060cf4cb20d48fdb1a877e, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: 18d02814db060cf4cb20d48fdb1a877e, type: 3}
   ot:
-  - 
-  - 
-  - 
+  - '"Died by not forwaring that text message to 10 people."'
   isBattery: 0
 --- !u!1001 &31421255
 Prefab:
@@ -1309,8 +1307,6 @@ MonoBehaviour:
   ot:
   - Here lies Johnathon Blake
   - '"Stepped on the gas instead of the brake."'
-  - 
-  - 
   isBattery: 0
 --- !u!1 &1351908934
 GameObject:
@@ -1566,16 +1562,12 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
+  ActivationProximity: 6
   BaseImage: {fileID: 21300000, guid: 24e5cafd4dbbae042a74b892598d4f93, type: 3}
   ActivatedImage: {fileID: 21300000, guid: 24e5cafd4dbbae042a74b892598d4f93, type: 3}
   ot:
   - Here lies Izzy Deadyet
   - '"I told you I was sick"'
-  - 
-  - 
-  - 
-  - 
   isBattery: 0
 --- !u!1 &1642760500
 GameObject:
