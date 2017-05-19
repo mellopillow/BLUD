@@ -1,6 +1,6 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Silhouette" {
+Shader "Custom/Outline" {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
 	_Color("Color", Color) = (1, 1, 1, 1)
@@ -42,10 +42,10 @@ Shader "Silhouette" {
 		outlineC.a *= ceil(c.a);
 		outlineC.rgb *= outlineC.a;
 
-		fixed alpha_up = tex2D(_MainTex, i.uv + fixed2(0, _MainTex_TexelSize.y)).a;
-		fixed alpha_down = tex2D(_MainTex, i.uv - fixed2(0, _MainTex_TexelSize.y)).a;
-		fixed alpha_right = tex2D(_MainTex, i.uv + fixed2(_MainTex_TexelSize.x, 0)).a;
-		fixed alpha_left = tex2D(_MainTex, i.uv - fixed2(_MainTex_TexelSize.x, 0)).a;
+		fixed alpha_up = tex2D(_MainTex, i.uv + fixed2(0, _MainTex_TexelSize.y*10)).a;
+		fixed alpha_down = tex2D(_MainTex, i.uv - fixed2(0, _MainTex_TexelSize.y*100)).a;
+		fixed alpha_right = tex2D(_MainTex, i.uv + fixed2(_MainTex_TexelSize.x*10, 0)).a;
+		fixed alpha_left = tex2D(_MainTex, i.uv - fixed2(_MainTex_TexelSize.x*10, 0)).a;
 
 		return lerp(outlineC, c, ceil(alpha_up * alpha_down * alpha_right * alpha_left));
 	}
