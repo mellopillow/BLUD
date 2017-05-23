@@ -26,10 +26,10 @@ public class ItemScript : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
-        //if (items == null)
-          //  items = this;
-        //else if (items != this)
-          //  Destroy(this.gameObject);
+        if (items == null)
+            items = this;
+        else if (items != this)
+            Destroy(this.gameObject);
 
         //Use if you don't want to destroy between scenes.
         DontDestroyOnLoad(this.gameObject);

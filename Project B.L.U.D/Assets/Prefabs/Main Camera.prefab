@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   damping: 0
   lookAheadFactor: 1
   lookAheadReturnSpeed: 4
@@ -117,15 +116,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850229355232070}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f443d0dce8ec2148adee1541f761205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mat: {fileID: 2100000, guid: 0a35388e60718e741838e3e021b18cab, type: 2}
-  max_light: 0.5
-  decrease_rate: 0.01
-  min_light: 0.05
 --- !u!124 &124918365185626884
 Behaviour:
   m_ObjectHideFlags: 1
