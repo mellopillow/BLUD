@@ -34,7 +34,7 @@ public class PathLoader : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
                 //clicked = true;
                 if (LoadLevel == true) {
-					GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().spawnlocation = SpawnPoint;
+					ItemScript.spawnlocation = SpawnPoint;
 					SceneManager.LoadScene (LevelToLoad);
 				}
                 if (isBattery)

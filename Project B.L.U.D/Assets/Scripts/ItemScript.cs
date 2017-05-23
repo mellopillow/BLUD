@@ -20,17 +20,19 @@ public class ItemScript : MonoBehaviour {
     public static float min_light = 0.05f;
     public static bool isMin = false;
 
+	public static int spawnlocation = 0;
+
     
 
     // Use this for initialization
     void Awake () {
-        if (items == null)
-            items = this;
-        else if (items != this)
-            Destroy(this.gameObject);
+        //if (items == null)
+          //  items = this;
+        //else if (items != this)
+          //  Destroy(this.gameObject);
 
         //Use if you don't want to destroy between scenes.
-        //DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
     }
 	
 	// Update is called once per frame

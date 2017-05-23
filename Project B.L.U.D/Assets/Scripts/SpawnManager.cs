@@ -8,14 +8,14 @@ public class SpawnManager : MonoBehaviour {
 	void Start () {
 		GameObject Player = GameObject.FindGameObjectWithTag("Player");
 		Transform startpoint = null;
-		if (Player.GetComponent<PlayerMovement> ().spawnlocation == 0) {
+		if (ItemScript.spawnlocation == 0) {
 			startpoint = GameObject.Find ("startpoint0").transform;
 		}
-		if (Player.GetComponent<PlayerMovement>().spawnlocation == 1) {
+		if (ItemScript.spawnlocation == 1) {
 			Debug.Log ("1");
 			startpoint = GameObject.Find ("startpoint1").transform;
 		}
-		else if (Player.GetComponent<PlayerMovement>().spawnlocation == 2) {
+		else if (ItemScript.spawnlocation == 2) {
 			Debug.Log ("2");
 			startpoint = GameObject.Find ("startpoint2").transform;
 		}
