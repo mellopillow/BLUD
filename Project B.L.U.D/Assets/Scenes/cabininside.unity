@@ -446,13 +446,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 5
+  LevelToLoad: 5
   SpawnPoint: 1
-  loadLevel: 1
-  proximity: 6
-  Glow: {fileID: 21300018, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
-  NoGlow: {fileID: 21300018, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
-  text: {fileID: 0}
+  LoadLevel: 1
+  ActivationProximity: 8
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 21300018, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
+  ot: []
+  isBattery: 0
 --- !u!4 &345068137 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013547357726, guid: e711035e026593049bfe3b25ba16166f,
@@ -643,6 +644,10 @@ Prefab:
         type: 2}
       propertyPath: target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850229355232070, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}

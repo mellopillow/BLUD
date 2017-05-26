@@ -434,6 +434,9 @@ MonoBehaviour:
   distanceFromTrigger: 5
   triggerLocations:
   - {fileID: 0}
+  clip: {fileID: 0}
+  playedSFX: 1
+  clip2: {fileID: 0}
 --- !u!4 &328212009
 Transform:
   m_ObjectHideFlags: 0
@@ -987,6 +990,10 @@ Prefab:
     - target: {fileID: 4610613671687510, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850229355232070, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}
@@ -1627,8 +1634,30 @@ Prefab:
     - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
         type: 2}
       propertyPath: SpawnPoint
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
+        type: 2}
+      propertyPath: LoadLevel
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
+        type: 2}
+      propertyPath: ActivationProximity
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
+        type: 2}
+      propertyPath: ActivatedImage
+      value: 
+      objectReference: {fileID: 21300002, guid: 2332a76717681d645a97ad840c02f176,
+        type: 3}
+    - target: {fileID: 114394174697277556, guid: 59b477464c5f88f46b389bedf2660bad,
+        type: 2}
+      propertyPath: BaseImage
+      value: 
+      objectReference: {fileID: 21300002, guid: fa478b4fa526adf4cb8e526e9c897911,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59b477464c5f88f46b389bedf2660bad, type: 2}
   m_IsPrefabParent: 0
