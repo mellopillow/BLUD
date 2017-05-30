@@ -59,7 +59,7 @@ public class PathLoader : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
             if (!load.isLoading())
             {
-                ExamineText.text = "examine";
+                ExamineText.text = "Examine";
                 print(text.color.a - Mathf.Abs((transform.position.x -
                         GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity)));
                     ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((transform.position.x -

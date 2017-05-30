@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour {
+public class SecondCritter : MonoBehaviour {
 
 	public float proximity;
 

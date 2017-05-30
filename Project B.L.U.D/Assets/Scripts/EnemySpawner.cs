@@ -12,8 +12,9 @@ public class EnemySpawner : MonoBehaviour {
     double timer;
     public static bool spawned = false;
     public AudioClip clip;
-    public bool playedSFX = true;
+    public static bool playedSFX = true;
     public AudioClip clip2;
+    public AudioClip beginningClip;
 
     void Spawn()
     {
@@ -56,6 +57,7 @@ public class EnemySpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         timer = 0;
+        spawned = false;
     }
 	
 	// Update is called once per frame
@@ -68,6 +70,13 @@ public class EnemySpawner : MonoBehaviour {
             playedSFX = false;
             AudioManager.instance.StopMusic();
             AudioManager.instance.PlayMusic(clip2);
+        }
+        if (!spawned && !playedSFX)
+        {
+            AudioManager.instance.StopSFX();
+            AudioManager.instance.StopMusic();
+            playedSFX = true;
+            AudioManager.instance.PlayMusic(beginningClip);
         }
 
     }

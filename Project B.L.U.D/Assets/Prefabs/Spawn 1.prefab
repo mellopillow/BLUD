@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4558432093165928}
   - component: {fileID: 114960702508027314}
   m_Layer: 10
-  m_Name: Enemy Spawn
+  m_Name: Spawn 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

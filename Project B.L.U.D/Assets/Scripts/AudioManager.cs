@@ -18,11 +18,13 @@ public class AudioManager : MonoBehaviour
         if (instance == null)
             instance = this;
         else if (instance != this)
+        {
             Destroy(this.gameObject);
+        }
         Debug.Log("Didn't destroy");
         //Use if you don't want to destroy between scenes.
         DontDestroyOnLoad(this.gameObject);
-        musicSource.Play();
+        //musicSource.Play();
         
        
     }
