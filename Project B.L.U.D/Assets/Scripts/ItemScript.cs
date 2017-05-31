@@ -1,4 +1,4 @@
-﻿	`using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,6 @@ public class ItemScript : MonoBehaviour {
 	public static bool slingshot = false;
 	public static bool second_critter_met = false;
 	public static bool second_critter = false;
-    public static bool second_critter_met = false;
     // battery variables
 	public static bool has_battery = false;
 	public static int battery_count = 0;
