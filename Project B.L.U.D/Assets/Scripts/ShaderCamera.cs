@@ -21,8 +21,10 @@ public class ShaderCamera : MonoBehaviour
 
     public void Update()
     {
+        
         if (ItemScript.battery_count > 0)
         {
+            
             if (Input.GetKeyDown("e"))
             {
                 ItemScript.isMin = false;
@@ -31,6 +33,7 @@ public class ShaderCamera : MonoBehaviour
                     ItemScript.current_light += .008f * Time.deltaTime;
                     Mat.SetFloat(Shader.PropertyToID("_Radius"), ItemScript.current_light);
                 }
+                ItemScript.items.decBattery();
             }
         }
         Vector3 mousePos = Input.mousePosition;

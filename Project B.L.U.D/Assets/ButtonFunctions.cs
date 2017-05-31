@@ -9,7 +9,7 @@ public class ButtonFunctions : MonoBehaviour {
     // Use this for initialization
     public void Continue()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(0);
     }
 
     public void Exit()
