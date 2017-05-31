@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
     private Text levelText;
     private GameObject levelImage;
     private bool doingSetup;
+    float alpha;
 
     void InitGame()
     {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         PauseMenu.SetActive(false);
-        Instantiate(player, new Vector3(0, 0, 0), Quaternion.identity);
+        //Instantiate(player, new Vector3(0, 0, 0), Quaternion.identity);
     }
 	
 	// Update is called once per frame
@@ -55,4 +56,15 @@ public class GameManager : MonoBehaviour {
         GameObject.FindWithTag("Enemy").GetComponent<EnemyMovement>().unfreeze();
         PauseMenu.SetActive(false);
     }
+
+    public float GetAlpha()
+    {
+        return alpha;
+    }
+
+    public void SetAlpha(float value)
+    {
+        alpha = value;
+    }
+
 }

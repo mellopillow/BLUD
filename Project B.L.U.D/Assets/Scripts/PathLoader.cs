@@ -22,9 +22,11 @@ public class PathLoader : MonoBehaviour
     float original_alpha;
     bool JustExited;
     bool JustEntered;
+    GameManager gm;
 
     void Start()
     {
+        gm = GameObject.FindWithTag("manager").GetComponent<GameManager>();
         original_alpha = 128;
         text = GameObject.FindWithTag("text").GetComponent<Text>();
         load = GameObject.FindWithTag("text").GetComponent<LoadText>();
@@ -54,21 +56,25 @@ public class PathLoader : MonoBehaviour
 		if (CheckCloseTo("Player", ActivationProximity))
 		{
             JustExited = false;
-			text.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a /*- Mathf.Abs((this.transform.position.x - GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity))*/);
             // fades text in and out based on distance between player and object
             gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
             if (!load.isLoading())
             {
                 ExamineText.text = "Examine";
-                print(text.color.a - Mathf.Abs((transform.position.x -
-                        GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity)));
-                    ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a - Mathf.Abs((transform.position.x -
-                        GameObject.FindWithTag("Player").transform.position.x * text.color.a / ActivationProximity)));
+                    ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, 1 - Mathf.Abs((transform.position.x -
+                        GameObject.FindWithTag("Player").transform.position.x * 1 / ActivationProximity)));
+                gm.SetAlpha(1 - Mathf.Abs((transform.position.x -
+                        GameObject.FindWithTag("Player").transform.position.x) * 1 / ActivationProximity));
                 RectTransform CanvasRect = GameObject.FindWithTag("canvas").GetComponent<RectTransform>();
                 Vector2 ViewportPosition = GameObject.FindWithTag("MainCamera").GetComponent<Camera>().WorldToViewportPoint(transform.position);
                 Vector2 WorldObject_ScreenPosition = new Vector2(
-                ((ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f))+ CanvasRect.sizeDelta.x / 20,
-                ((ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f))+ViewportPosition.y*CanvasRect.sizeDelta.y/2);
+                (ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f) + CanvasRect.sizeDelta.x / 20,
+                (ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f) + CanvasRect.sizeDelta.y / 2);
+                /*print("x: ");
+                print(WorldObject_ScreenPosition.x);
+                print("y: ");
+                print(WorldObject_ScreenPosition.y);*/
+
 
                 //now you can set the position of the ui element
                 ExamineText.GetComponent<RectTransform>().anchoredPosition = new Vector2(WorldObject_ScreenPosition.x, WorldObject_ScreenPosition.y);
@@ -76,10 +82,12 @@ public class PathLoader : MonoBehaviour
         }
 
 		else {
-            ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, text.color.a);
+            ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, gm.GetAlpha());
             //clicked = false;
             if (!JustExited)
             {
+                gm.SetAlpha(1);
+                ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, .5f);
                 ExamineText.text = "";
                 JustExited = true;
             }
