@@ -8,10 +8,15 @@ public class Obstacle : MonoBehaviour {
 	public int counter = 0;
 	public GameObject back_gate;
 	public GameObject front_gate;
+	static bool opened = false;
 
 	// Use this for initialization
 	void Start () {
-		
+		if (opened == true) {
+			this.gameObject.SetActive (false);
+			back_gate.SetActive (true);
+			front_gate.SetActive (true);
+		}
 	}
 	
 	// Update is called once per frame
@@ -25,6 +30,7 @@ public class Obstacle : MonoBehaviour {
 			this.gameObject.SetActive (false);
 			back_gate.SetActive (true);
 			front_gate.SetActive (true);
+			opened = true;
 		}
 	}
 }

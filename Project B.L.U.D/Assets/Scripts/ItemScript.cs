@@ -7,10 +7,13 @@ public class ItemScript : MonoBehaviour {
     public static ItemScript items = null;
 
     public static bool key = false;
+	public static bool key2 = false;
 	public static bool chainsaw = false;
 	public static bool slingshot = false;
 	public static bool second_critter_met = false;
 	public static bool second_critter = false;
+	public static bool third_critter_met = false;
+	public static bool third_critter = false;
     // battery variables
 	public static bool has_battery = false;
 	public static int battery_count = 0;
