@@ -54,7 +54,8 @@ public class GameManager : MonoBehaviour {
     {
         Time.timeScale = 1;
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().unfreeze();
-        GameObject.FindWithTag("Enemy").GetComponent<EnemyMovement>().unfreeze();
+        if (GameObject.FindWithTag("Enemy") != null)
+            GameObject.FindWithTag("Enemy").GetComponent<EnemyMovement>().unfreeze();
         PauseMenu.SetActive(false);
     }
 

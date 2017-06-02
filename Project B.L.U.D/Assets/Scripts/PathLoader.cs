@@ -58,7 +58,7 @@ public class PathLoader : MonoBehaviour
             JustExited = false;
             // fades text in and out based on distance between player and object
             gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
-            if (!load.isLoading())
+            if (!load.isLoading() && ExamineText!=null)
             {
                 ExamineText.text = "Examine";
                 ExamineText.enabled = true;
@@ -83,15 +83,18 @@ public class PathLoader : MonoBehaviour
         }
 
 		else {
-            ExamineText.enabled = false;
-            ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, gm.GetAlpha());
-            //clicked = false;
-            if (!JustExited)
+            if (ExamineText != null)
             {
-                gm.SetAlpha(1);
-                ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, .5f);
-                ExamineText.text = "";
-                JustExited = true;
+                ExamineText.enabled = false;
+                ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, gm.GetAlpha());
+                //clicked = false;
+                if (!JustExited)
+                {
+                    gm.SetAlpha(1);
+                    ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, .5f);
+                    ExamineText.text = "";
+                    JustExited = true;
+                }
             }
 			gameObject.GetComponent<SpriteRenderer>().sprite = BaseImage;
             //load.load("");
