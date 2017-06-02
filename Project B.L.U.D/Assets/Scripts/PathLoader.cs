@@ -30,7 +30,7 @@ public class PathLoader : MonoBehaviour
         original_alpha = 128;
         text = GameObject.FindWithTag("text").GetComponent<Text>();
         load = GameObject.FindWithTag("text").GetComponent<LoadText>();
-        ExamineText = GameObject.FindWithTag("inspect").GetComponent<Text>();
+        ExamineText = GetComponentInChildren<Text>(); //GameObject.FindWithTag("inspect").GetComponent<Text>();
     }
 
     void Update(){
@@ -61,27 +61,29 @@ public class PathLoader : MonoBehaviour
             if (!load.isLoading())
             {
                 ExamineText.text = "Examine";
-                    ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, 1 - Mathf.Abs((transform.position.x -
+                ExamineText.enabled = true;
+                ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, 1 - Mathf.Abs((transform.position.x -
                         GameObject.FindWithTag("Player").transform.position.x * 1 / ActivationProximity)));
                 gm.SetAlpha(1 - Mathf.Abs((transform.position.x -
                         GameObject.FindWithTag("Player").transform.position.x) * 1 / ActivationProximity));
-                RectTransform CanvasRect = GameObject.FindWithTag("canvas").GetComponent<RectTransform>();
+                /*RectTransform CanvasRect = GameObject.FindWithTag("canvas").GetComponent<RectTransform>();
                 Vector2 ViewportPosition = GameObject.FindWithTag("MainCamera").GetComponent<Camera>().WorldToViewportPoint(transform.position);
                 Vector2 WorldObject_ScreenPosition = new Vector2(
                 (ViewportPosition.x * CanvasRect.sizeDelta.x) - (CanvasRect.sizeDelta.x * 0.5f) + CanvasRect.sizeDelta.x / 20,
                 (ViewportPosition.y * CanvasRect.sizeDelta.y) - (CanvasRect.sizeDelta.y * 0.5f) + CanvasRect.sizeDelta.y / 2);
-                /*print("x: ");
+                print("x: ");
                 print(WorldObject_ScreenPosition.x);
                 print("y: ");
-                print(WorldObject_ScreenPosition.y);*/
+                print(WorldObject_ScreenPosition.y);
 
 
                 //now you can set the position of the ui element
-                ExamineText.GetComponent<RectTransform>().anchoredPosition = new Vector2(WorldObject_ScreenPosition.x, WorldObject_ScreenPosition.y);
+                ExamineText.GetComponent<RectTransform>().anchoredPosition = new Vector2(WorldObject_ScreenPosition.x, WorldObject_ScreenPosition.y);*/
             }
         }
 
 		else {
+            ExamineText.enabled = false;
             ExamineText.material.color = new Color(text.color.r, text.color.g, text.color.b, gm.GetAlpha());
             //clicked = false;
             if (!JustExited)
