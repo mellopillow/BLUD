@@ -38,7 +38,8 @@ public class PathLoader : MonoBehaviour
 		if (Input.GetKeyDown ("space") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
-                load.LoadArray(ot);
+                if(ot.Length>0)
+                    load.LoadArray(ot);
                 gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
                 //clicked = true;
                 if (LoadLevel == true) {

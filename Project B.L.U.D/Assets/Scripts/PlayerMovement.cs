@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
     
     void Move(float h/*, float v*/){
-        velocity.x = h * /*smoothing**/ MoveSpeed;
+        velocity.x = h * /*smoothing**/ MoveSpeed * Time.deltaTime;
         transform.Translate(velocity);
 		var d = Input.GetAxis("Horizontal");
         if (!frozen)
