@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 144518709}
   - component: {fileID: 144518708}
   - component: {fileID: 144518710}
+  - component: {fileID: 144518711}
   m_Layer: 0
   m_Name: fridge
   m_TagString: Untagged
@@ -263,6 +264,46 @@ MonoBehaviour:
   door1: {fileID: 935806857}
   door2: {fileID: 1987742169}
   proximity: 10
+--- !u!114 &144518711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144518707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - "\"Who\u2019s there?! Oh , its you! "
+  - Oooohhh Lordy is it good to see you!
+  - 'It was starting to get alll stuffy down there and sorts! '
+  - "Now I ain\u2019t used to that sort of thing.\" "
+  - 'Bonnie: How did you get yourself stuck down there?'
+  - 'Critter #1: I was just going about my day'
+  - when all of a sudden I hear a low growling
+  - I almost got bit by a vicious creature!
+  - It was too dark to see but it was furry
+  - and had long ears.
+  - I had to hide here for safety!
+  - 'Bonnie: You don''t know what you''re talking about'
+  - Were you born on the highway?
+  - I hear that's where most accidents happen..
+  - 'Critter #1: No I''m sure that''s what I...'
+  - '...awww I just realized that was an insult..'
+  - Bonnie:.....
+  - 'Critter #1: Yeah maybe it was my imagination.'
+  - Thanks for saving me! Here, I found
+  - something down here. Maybe you can
+  - find some use for it!
+  isBattery: 0
 --- !u!1 &166331800
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 166331802}
   - component: {fileID: 166331801}
+  - component: {fileID: 166331803}
   m_Layer: 0
   m_Name: table
   m_TagString: Untagged
@@ -332,6 +374,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &166331803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 166331800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - What a mess!
+  - Looks like a tornado came through here.
+  isBattery: 0
 --- !u!4 &168223086 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013547357726, guid: e711035e026593049bfe3b25ba16166f,

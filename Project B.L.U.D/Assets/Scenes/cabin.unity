@@ -419,6 +419,21 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!1 &326247884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 368971327}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &328212007
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,8 +468,8 @@ MonoBehaviour:
   triggerLocations:
   - {fileID: 1072291099}
   clip: {fileID: 8300000, guid: fde8e4350f11b644780961c4098401ef, type: 3}
-  playedSFX: 1
   clip2: {fileID: 8300000, guid: 1ff13728da219184398c61d2eda36131, type: 3}
+  beginningClip: {fileID: 0}
 --- !u!4 &328212009
 Transform:
   m_ObjectHideFlags: 0
@@ -533,6 +548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365520737}
   - component: {fileID: 365520736}
+  - component: {fileID: 365520738}
   m_Layer: 0
   m_Name: bloodtrail?
   m_TagString: Untagged
@@ -593,6 +609,27 @@ Transform:
   m_Father: {fileID: 700286132}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &365520738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365520735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - The blood looks fresh...
+  - Looks like someone was here recently...
+  isBattery: 0
 --- !u!1001 &366907230
 Prefab:
   m_ObjectHideFlags: 0
@@ -635,11 +672,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0e93c2eb76fb324c81240f0a3c4d74c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &368971323 stripped
+--- !u!1 &368971323
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1591842299227646, guid: 59b477464c5f88f46b389bedf2660bad,
     type: 2}
   m_PrefabInternal: {fileID: 1878921579}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 368971325}
+  - component: {fileID: 368971324}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!114 &368971324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,11 +709,33 @@ MonoBehaviour:
   ot:
   - path
   isBattery: 0
---- !u!4 &368971327 stripped
+--- !u!4 &368971325
 Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  m_GameObject: {fileID: 368971323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1829732615}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &368971327
+Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4359428497639788, guid: 59b477464c5f88f46b389bedf2660bad,
     type: 2}
   m_PrefabInternal: {fileID: 1878921579}
+  m_GameObject: {fileID: 326247884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1829732615}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &372311493
 Prefab:
   m_ObjectHideFlags: 0
@@ -854,6 +925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488595071}
   - component: {fileID: 488595070}
+  - component: {fileID: 488595072}
   m_Layer: 0
   m_Name: STAY OUT! sign
   m_TagString: Untagged
@@ -914,6 +986,28 @@ Transform:
   m_Father: {fileID: 700286132}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488595072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 488595069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - '"PRIVATE PROPERTY!'
+  - STAY OUT!"
+  - Well, that never stopped me...
+  isBattery: 0
 --- !u!1 &492024708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1119,7 @@ Transform:
   m_LocalPosition: {x: 101.847305, y: -10.663931, z: -0.0625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 368971327}
+  - {fileID: 1829732615}
   - {fileID: 567456702}
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -1857,6 +1951,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1647671127}
   - component: {fileID: 1647671126}
+  - component: {fileID: 1647671129}
+  - component: {fileID: 1647671128}
   m_Layer: 0
   m_Name: note(went to garden)
   m_TagString: Untagged
@@ -1917,6 +2013,52 @@ Transform:
   m_Father: {fileID: 700286132}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1647671128
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647671125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 10, y: 10}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10}
+  m_EdgeRadius: 0
+--- !u!114 &1647671129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1647671125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - '"Gone gardening. Do not disturb!"'
+  - Huh.Let's check out the gardens!
+  isBattery: 0
 --- !u!1 &1712445851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2268,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b418a18616c722849941d34791360399, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1829732614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1829732615}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829732615
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  m_GameObject: {fileID: 1829732614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 368971325}
+  - {fileID: 368971327}
+  m_Father: {fileID: 512888535}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1833684113
 Prefab:
   m_ObjectHideFlags: 0

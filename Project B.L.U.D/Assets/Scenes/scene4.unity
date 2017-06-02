@@ -339,11 +339,20 @@ Transform:
   m_Father: {fileID: 1351161903}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &133200788 stripped
+--- !u!4 &133200788
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4359428497639788, guid: 59b477464c5f88f46b389bedf2660bad,
     type: 2}
   m_PrefabInternal: {fileID: 1878921579}
+  m_GameObject: {fileID: 2111400791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1877201392}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &154780998
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +490,7 @@ Transform:
   m_LocalScale: {x: 0.6261095, y: 0.7533639, z: 0.5038252}
   m_Children: []
   m_Father: {fileID: 459200089}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &164983345
 MonoBehaviour:
@@ -514,7 +523,7 @@ GameObject:
   - component: {fileID: 189261612}
   - component: {fileID: 189261611}
   m_Layer: 0
-  m_Name: boxkun
+  m_Name: plant 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -611,7 +620,7 @@ GameObject:
   - component: {fileID: 284631207}
   - component: {fileID: 284631206}
   m_Layer: 0
-  m_Name: boxkun (7)
+  m_Name: plant 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -668,7 +677,7 @@ Transform:
   m_LocalScale: {x: 0.324731, y: 0.32473105, z: 0.32473105}
   m_Children: []
   m_Father: {fileID: 459200089}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306718824
 GameObject:
@@ -695,9 +704,9 @@ Transform:
   m_LocalPosition: {x: -9.900434, y: -6.963759, z: -0.0625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 133200788}
-  - {fileID: 570537691}
-  - {fileID: 1795590765}
+  - {fileID: 1877201392}
+  - {fileID: 1801312709}
+  - {fileID: 902102415}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1075,10 +1084,10 @@ Transform:
   - {fileID: 1740993973}
   - {fileID: 1055679244}
   - {fileID: 1574522081}
+  - {fileID: 284631207}
   - {fileID: 164983344}
   - {fileID: 1771509513}
   - {fileID: 1963306742}
-  - {fileID: 284631207}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1251,11 +1260,20 @@ Transform:
   m_Father: {fileID: 941749681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &570537691 stripped
+--- !u!4 &570537691
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4359428497639788, guid: 59b477464c5f88f46b389bedf2660bad,
     type: 2}
   m_PrefabInternal: {fileID: 1632897558}
+  m_GameObject: {fileID: 1110955067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1801312709}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646857861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1725,35 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e711035e026593049bfe3b25ba16166f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &902102414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 810612174}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 902102415}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &902102415
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 810612174}
+  m_GameObject: {fileID: 902102414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1795590765}
+  m_Father: {fileID: 306718825}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &904465809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,8 +1892,9 @@ GameObject:
   - component: {fileID: 1055679244}
   - component: {fileID: 1055679243}
   - component: {fileID: 1055679245}
+  - component: {fileID: 1055679246}
   m_Layer: 0
-  m_Name: cabin key
+  m_Name: cabin key+plant 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1917,6 +1965,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proximity: 5
+--- !u!114 &1055679246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055679242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - There seems to be something sticking out of the ground!
+  - A key? What is this doing stuck in the ground?
+  - I guess I better hold onto it for now.
+  isBattery: 0
+--- !u!1 &1110955067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1632897558}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 570537691}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1281780932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,7 +2424,7 @@ GameObject:
   - component: {fileID: 1574522081}
   - component: {fileID: 1574522080}
   m_Layer: 0
-  m_Name: boxkun (6)
+  m_Name: plant 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2671,7 +2756,7 @@ GameObject:
   - component: {fileID: 1740993973}
   - component: {fileID: 1740993972}
   m_Layer: 0
-  m_Name: boxkun (3)
+  m_Name: plant 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2741,6 +2826,7 @@ GameObject:
   - component: {fileID: 1771509512}
   - component: {fileID: 1771509514}
   - component: {fileID: 1771509515}
+  - component: {fileID: 1771509516}
   m_Layer: 0
   m_Name: vines(needs axe to cut)
   m_TagString: Untagged
@@ -2799,7 +2885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2.2050025, z: 1}
   m_Children: []
   m_Father: {fileID: 459200089}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1771509514
 MonoBehaviour:
@@ -2822,7 +2908,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2838,6 +2924,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &1771509516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1771509511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - These vines are way too thick for me to get through
+  - I'm gonna need to find something that can cut through this
+  isBattery: 0
 --- !u!1001 &1774980858
 Prefab:
   m_ObjectHideFlags: 0
@@ -2899,11 +3006,49 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc129b4e7a87f084781baa06a5e984b5, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1795590765 stripped
+--- !u!4 &1795590765
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4359428497639788, guid: 59b477464c5f88f46b389bedf2660bad,
     type: 2}
   m_PrefabInternal: {fileID: 810612174}
+  m_GameObject: {fileID: 1983649221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 902102415}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1801312708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1632897558}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1801312709}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1801312709
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1632897558}
+  m_GameObject: {fileID: 1801312708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 570537691}
+  m_Father: {fileID: 306718825}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1833684113
 Prefab:
   m_ObjectHideFlags: 0
@@ -3046,6 +3191,35 @@ Transform:
   m_Father: {fileID: 1351161903}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1877201391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1877201392}
+  m_Layer: 0
+  m_Name: Missing Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1877201392
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  m_GameObject: {fileID: 1877201391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 133200788}
+  m_Father: {fileID: 306718825}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1878921579
 Prefab:
   m_ObjectHideFlags: 0
@@ -3184,7 +3358,7 @@ GameObject:
   - component: {fileID: 1886216738}
   - component: {fileID: 1886216737}
   m_Layer: 0
-  m_Name: boxkun (2)
+  m_Name: plant 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3321,6 +3495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963306742}
   - component: {fileID: 1963306741}
+  - component: {fileID: 1963306743}
   m_Layer: 0
   m_Name: broken scissors?
   m_TagString: Untagged
@@ -3379,8 +3554,43 @@ Transform:
   m_LocalScale: {x: 0.6, y: 0.4685645, z: 1}
   m_Children: []
   m_Father: {fileID: 459200089}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963306743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963306740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 0
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot:
+  - I guess that didn't work on the vines
+  isBattery: 0
+--- !u!1 &1983649221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 810612174}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1795590765}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &2002720820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3391,7 +3601,7 @@ GameObject:
   - component: {fileID: 2002720822}
   - component: {fileID: 2002720821}
   m_Layer: 0
-  m_Name: boxkun (1)
+  m_Name: plant 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3561,3 +3771,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 356cae6b76da5c348b9d94d7dccdf69a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2111400791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 1878921579}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 133200788}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
