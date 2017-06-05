@@ -16,6 +16,7 @@ public class ButtonFunctions : MonoBehaviour {
     public void Exit()
     {
         SceneManager.LoadScene(11);
+        GameManager.GetComponent<GameManager>().Unpause();
     }
 
     public void Resume()
