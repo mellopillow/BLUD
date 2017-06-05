@@ -27,12 +27,12 @@ public class ShaderCamera : MonoBehaviour
             
             if (Input.GetKeyDown("e"))
             {
+                Debug.Log("Battery used");
                 ItemScript.isMin = false;
-                while (ItemScript.current_light < ItemScript.max_light)
-                {
-                    ItemScript.current_light += .008f * Time.deltaTime;
-                    Mat.SetFloat(Shader.PropertyToID("_Radius"), ItemScript.current_light);
-                }
+                
+                ItemScript.current_light = ItemScript.max_light;
+                Mat.SetFloat(Shader.PropertyToID("_Radius"), ItemScript.current_light);
+                
                 ItemScript.items.decBattery();
             }
         }

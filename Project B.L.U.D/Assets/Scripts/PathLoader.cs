@@ -38,8 +38,11 @@ public class PathLoader : MonoBehaviour
 		if (Input.GetKeyDown ("space") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
-                if(ot.Length>0)
+                if (ot.Length > 0)
+                {
+                    AudioManager.instance.PlaySFXClip(AudioManager.instance.sfx[0], .7f);
                     load.LoadArray(ot);
+                }
                 gameObject.GetComponent<SpriteRenderer>().sprite = ActivatedImage;
                 //clicked = true;
                 if (LoadLevel == true) {
@@ -48,6 +51,8 @@ public class PathLoader : MonoBehaviour
 				}
                 if (isBattery)
                 {
+                    Debug.Log("got battery");
+                    print(ItemScript.battery_count);
                     ItemScript.items.incBattery();
                     isBattery = false; // only get battery once
                 }

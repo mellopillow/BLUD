@@ -11,9 +11,12 @@ public class AudioManager : MonoBehaviour
     private AudioSource musicSource;
 
     public static AudioManager instance = null;
+    public AudioClip[] music;
+    public AudioClip[] sfx;
 
     void Start()
     {
+        
         //Check for AudioManager
         if (instance == null)
             instance = this;
@@ -24,7 +27,7 @@ public class AudioManager : MonoBehaviour
         Debug.Log("Didn't destroy");
         //Use if you don't want to destroy between scenes.
         DontDestroyOnLoad(this.gameObject);
-        //musicSource.Play();
+        PlayMusic(music[0], .9f);
         
        
     }
@@ -35,7 +38,7 @@ public class AudioManager : MonoBehaviour
     }
 
     //Note: AudioManager is set to only play one song at a time
-    public void PlayMusic(AudioClip clip)
+    public void PlayMusic(AudioClip clip, float volume)
     {
         if (musicSource.isPlaying)
             musicSource.Stop();

@@ -13,8 +13,7 @@ public class EnemySpawner : MonoBehaviour {
     public static bool spawned = false;
     public AudioClip clip;
     public static bool playedSFX = true;
-    public AudioClip clip2;
-    public AudioClip beginningClip;
+    
 
     void Spawn()
     {
@@ -69,14 +68,14 @@ public class EnemySpawner : MonoBehaviour {
             AudioManager.instance.PlaySFXClip(clip, .6f);
             playedSFX = false;
             AudioManager.instance.StopMusic();
-            AudioManager.instance.PlayMusic(clip2);
+            AudioManager.instance.PlayMusic(AudioManager.instance.music[1], .9f);
         }
         if (!spawned && !playedSFX)
         {
             AudioManager.instance.StopSFX();
             AudioManager.instance.StopMusic();
             playedSFX = true;
-            AudioManager.instance.PlayMusic(beginningClip);
+            AudioManager.instance.PlayMusic(AudioManager.instance.music[0], .9f);
         }
 
     }

@@ -5,7 +5,7 @@ using System.Diagnostics;
 public class PlayerMovement : MonoBehaviour {
 
     // Use this for initialization
-    public float MoveSpeed = .3f;
+    public float MoveSpeed = 11f;
     float def;
     //float smoothing, frames;
     Vector3 velocity;
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour {
     void PlaySound()
     {
         //audioManager.SetSFXVolume(.5f);
-        AudioManager.instance.PlaySFXClip(footsteps, .6f);
+        AudioManager.instance.PlaySFXClip(footsteps, .4f);
     }
 
     public void freeze()
