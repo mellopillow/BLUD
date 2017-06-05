@@ -68,14 +68,14 @@ public class EnemySpawner : MonoBehaviour {
             AudioManager.instance.PlaySFXClip(clip, .6f);
             playedSFX = false;
             AudioManager.instance.StopMusic();
-            AudioManager.instance.PlayMusic(AudioManager.instance.music[1], .9f);
+            AudioManager.instance.PlayMusic(AudioManager.instance.music[2], .9f);
         }
         if (!spawned && !playedSFX)
         {
             AudioManager.instance.StopSFX();
             AudioManager.instance.StopMusic();
             playedSFX = true;
-            AudioManager.instance.PlayMusic(AudioManager.instance.music[0], .9f);
+            AudioManager.instance.randomMusic(AudioManager.instance.music);
         }
 
     }

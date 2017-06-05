@@ -9,12 +9,13 @@ public class ButtonFunctions : MonoBehaviour {
     // Use this for initialization
     public void Continue()
     {
+        AudioManager.playCount++;
         SceneManager.LoadScene(0);
     }
 
     public void Exit()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(11);
     }
 
     public void Resume()

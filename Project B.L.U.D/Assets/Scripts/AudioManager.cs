@@ -13,10 +13,21 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance = null;
     public AudioClip[] music;
     public AudioClip[] sfx;
+    public static int playCount = 0;
+
+    void Awake()
+    {
+        if (playCount == 0)
+        {
+            Debug.Log("awake started");
+            PlayMusic(music[1], .9f);
+            
+        }
+    }
 
     void Start()
     {
-        
+        Debug.Log("Start");
         //Check for AudioManager
         if (instance == null)
             instance = this;
@@ -24,12 +35,22 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        Debug.Log("Didn't destroy");
+        print(playCount);
         //Use if you don't want to destroy between scenes.
         DontDestroyOnLoad(this.gameObject);
-        PlayMusic(music[0], .9f);
         
        
+    }
+
+    public void Update()
+    {
+        if (playCount == 1)
+        {
+
+            PlayMusic(music[0], .9f);
+            //playCount++;
+        }
+        
     }
 
     public void PlaySFXClip(AudioClip clip, float volume)
@@ -76,6 +97,12 @@ public class AudioManager : MonoBehaviour
     {
         int randomIndex = Random.Range(0, clips.Length);
         sfxSource.PlayOneShot(clips[randomIndex]);
+    }
+
+    public void randomMusic(params AudioClip[] clips)
+    {
+        int randomIndex = Random.Range(0, clips.Length - 1);
+        PlayMusic(clips[randomIndex], .9f);
     }
 
 }

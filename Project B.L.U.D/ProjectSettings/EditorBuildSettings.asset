@@ -38,3 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 6ad757ee8f99446468d97ab2051e5058
+  - enabled: 1
+    path: Assets/Scenes/MenuTest.unity
+    guid: 730425b928ae55c48880557e8beeaa97

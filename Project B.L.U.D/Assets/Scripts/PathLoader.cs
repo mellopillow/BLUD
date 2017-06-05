@@ -48,6 +48,7 @@ public class PathLoader : MonoBehaviour
                 if (LoadLevel == true) {
 					ItemScript.spawnlocation = SpawnPoint;
 					SceneManager.LoadScene (LevelToLoad);
+                    AudioManager.playCount++;
 				}
                 if (isBattery)
                 {
