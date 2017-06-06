@@ -1785,7 +1785,7 @@ Prefab:
     - target: {fileID: 114461984076641780, guid: 944d3cb115c0d4f4f86952839c2e1add,
         type: 2}
       propertyPath: SpawnPoint
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 944d3cb115c0d4f4f86952839c2e1add, type: 2}
