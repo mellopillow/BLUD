@@ -5,7 +5,7 @@ public class EnemyMovement : MonoBehaviour {
 
     // Use this for tialization
     public float speed;
-    Animator animator;
+    public Animator animator;
     float def;
     float MoveSpeed;
     bool frozen;
@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour {
     bool firstSpawn = true;
     
 	void Start () {
-        //animator = GetComponent<Animator>();   PUT THIS IN ONCE ENEMY HAS ANIMATOR
+        animator = GetComponent<Animator>();   
         timer = 0f;
         MoveSpeed = 0f;
         enemyRB = GetComponent<Rigidbody2D>();
@@ -43,6 +43,7 @@ public class EnemyMovement : MonoBehaviour {
 
         if (h > h2)
         {
+			animator.Play ("Walking right");
             if (ItemScript.current_light > h2)
             {
                 if (firstSpawn)
@@ -55,6 +56,8 @@ public class EnemyMovement : MonoBehaviour {
         }
         else
         {
+			this.gameObject.GetComponent<SpriteRenderer> ().flipX = true;
+			animator.Play ("Walking left");
             if (ItemScript.current_light < h2)
             {
                 if (firstSpawn)
