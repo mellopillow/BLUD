@@ -1087,7 +1087,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4811028295217756, guid: 012cb461daf6f93439ba3d66091c88aa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.29
+      value: -10.6
       objectReference: {fileID: 0}
     - target: {fileID: 4811028295217756, guid: 012cb461daf6f93439ba3d66091c88aa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1128,6 +1128,12 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114368012593408650, guid: 012cb461daf6f93439ba3d66091c88aa,
+        type: 2}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1892970367401984, guid: f82fa103a22cbbd49b80604cd1fdf229,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 012cb461daf6f93439ba3d66091c88aa, type: 2}
   m_IsPrefabParent: 0
@@ -1407,7 +1413,7 @@ Prefab:
     - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
         type: 2}
       propertyPath: sfx.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
         type: 2}
@@ -1491,6 +1497,11 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
+        type: 2}
+      propertyPath: sfx.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b8f8802bf46fdae45bade956fba551d5, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 356cae6b76da5c348b9d94d7dccdf69a, type: 2}
   m_IsPrefabParent: 0
@@ -1750,7 +1761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4558432093165928, guid: ceb869e5485ac5945989d25007bb3948, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.7
+      value: -9.1
       objectReference: {fileID: 0}
     - target: {fileID: 4558432093165928, guid: ceb869e5485ac5945989d25007bb3948, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1780,7 +1791,8 @@ Prefab:
       propertyPath: m_Name
       value: Enemy spawn
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114960702508027314, guid: ceb869e5485ac5945989d25007bb3948, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ceb869e5485ac5945989d25007bb3948, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &858567237

@@ -243,7 +243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1817423249
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300004, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -295,9 +295,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
+  ActivationProximity: 13
+  BaseImage: {fileID: 21300004, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
+  ActivatedImage: {fileID: 21300004, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
   ot:
   - "\"Who\u2019s there?! Oh , its you! "
   - Oooohhh Lordy is it good to see you!
@@ -405,9 +405,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
+  ActivationProximity: 10
+  BaseImage: {fileID: 21300012, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
+  ActivatedImage: {fileID: 21300012, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
   ot:
   - What a mess!
   - Looks like a tornado came through here.
@@ -529,10 +529,11 @@ MonoBehaviour:
   LevelToLoad: 5
   SpawnPoint: 1
   LoadLevel: 1
-  ActivationProximity: 8
+  ActivationProximity: 10
   BaseImage: {fileID: 0}
   ActivatedImage: {fileID: 21300018, guid: e085c48f2fdf884459e8c0a7286860a7, type: 3}
-  ot: []
+  ot:
+  - path
   isBattery: 0
 --- !u!4 &345068137 stripped
 Transform:
