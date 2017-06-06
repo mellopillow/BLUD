@@ -13,11 +13,12 @@ public class EnemySpawner : MonoBehaviour {
     public static bool spawned = false;
     public AudioClip clip;
     public static bool playedSFX = true;
+    int randomHit = 1;
     
 
     void Spawn()
     {
-        clone = Instantiate(enemy, new Vector3(spawnLocation.position.x - ((int)(Random.value*2)*2-1)*spawnDistance, spawnLocation.position.y, spawnLocation.position.z), Quaternion.identity) as GameObject;
+        clone = Instantiate(enemy, new Vector3(spawnLocation.position.x - ((int)(Random.value*2)*2-1)*spawnDistance, triggerLocations[0].position.y, spawnLocation.position.z), Quaternion.identity) as GameObject;
     }
 
     void TimeSpawn(){
@@ -86,8 +87,16 @@ public class EnemySpawner : MonoBehaviour {
         {
             if (spawned == false)
             {
-                Spawn();
-                spawned = true;
+                // 30% chance of spawning
+                int random_value = Random.Range(0, 3);
+                print(random_value);
+                if (random_value == randomHit)
+                {
+                    print("random hit");
+                    print(random_value);
+                    Spawn();
+                    spawned = true;
+                }
             }
         }
 
