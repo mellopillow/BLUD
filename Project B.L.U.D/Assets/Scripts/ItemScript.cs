@@ -52,4 +52,9 @@ public class ItemScript : MonoBehaviour {
     {
         battery_count--;
     }
+
+    public float getCurrentRadius()
+    {
+        return current_light;
+    }
 }

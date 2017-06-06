@@ -39,10 +39,23 @@ public class EnemyMovement : MonoBehaviour {
             MoveSpeed = speed;
             def = speed;
         }
+
         if (h > h2)
+        {
+            if (ItemScript.current_light > h2)
+            {
+                MoveSpeed += 0.5f;
+            }
             velocity.x = MoveSpeed;
+        }
         else
+        {
+            if (ItemScript.current_light < h2)
+            {
+                MoveSpeed += 0.5f;
+            }
             velocity.x = -MoveSpeed;
+        }
         enemy.Translate(velocity);
     }
 
@@ -56,5 +69,11 @@ public class EnemyMovement : MonoBehaviour {
     {
         frozen = false;
         MoveSpeed = def;
+    }
+
+    void PlaySound()
+    {
+        //audioManager.SetSFXVolume(.5f);
+        AudioManager.instance.PlaySFXClip(AudioManager.instance.sfx[1], .4f);
     }
 }

@@ -35,7 +35,7 @@ public class PathLoader : MonoBehaviour
 
     void Update(){
        
-		if (Input.GetKeyDown ("space") && !load.isLoading()){
+		if (Input.GetKeyDown ("e") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
                 if (ot.Length > 0)

@@ -46,7 +46,7 @@ public class LoadText : MonoBehaviour {
     {
         if (SpacePressed)
         {
-            if (Input.GetKeyDown("space") && !first)
+            if (Input.GetKeyDown("e") && !first)
             {
                 print("hello");
                 CurLetter = CurrentWord.Length;
@@ -70,7 +70,7 @@ public class LoadText : MonoBehaviour {
             first = false;
         }
         else {
-            if (Input.GetKeyDown("space") && started)
+            if (Input.GetKeyDown("e") && started)
             {
                 SpacePressed = true;
                 if (CurSentence >= Sequence.Length)

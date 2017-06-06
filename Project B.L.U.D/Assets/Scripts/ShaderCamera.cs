@@ -25,7 +25,7 @@ public class ShaderCamera : MonoBehaviour
         if (ItemScript.battery_count > 0)
         {
             
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("space"))
             {
                 Debug.Log("Battery used");
                 ItemScript.isMin = false;
@@ -63,4 +63,6 @@ public class ShaderCamera : MonoBehaviour
     {
         Graphics.Blit(source, destination, Mat);
     }
+
+    
 }
