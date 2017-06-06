@@ -9,6 +9,16 @@ public class Fridge : MonoBehaviour {
 	public GameObject door1;
 	public GameObject door2;
 	public int proximity;
+	static bool finished = false;
+
+	void Start () {
+		if (finished == true) {
+			this.gameObject.SetActive (false);
+			door1.SetActive (false);
+			fridge2.SetActive(true);
+			door2.SetActive (true);
+		}
+	}
 
 	void Update () {
 		if (Input.GetKeyDown ("space")){
@@ -19,6 +29,7 @@ public class Fridge : MonoBehaviour {
 				critter1.SetActive(true);
 				door2.SetActive (true);
 				ItemScript.chainsaw = true;
+				finished = true;
 			}		
 		}
 	}
