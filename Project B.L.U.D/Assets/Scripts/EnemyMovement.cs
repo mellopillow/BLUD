@@ -48,7 +48,7 @@ public class EnemyMovement : MonoBehaviour {
             {
                 if (firstSpawn)
                 {
-                    MoveSpeed += 1f;
+                    MoveSpeed += .5f;
                     firstSpawn = false;
                 }
             }
@@ -62,7 +62,7 @@ public class EnemyMovement : MonoBehaviour {
             {
                 if (firstSpawn)
                 {
-                    MoveSpeed += 1f;
+                    MoveSpeed += .5f;
                     firstSpawn = false;
                 }
             }
@@ -86,6 +86,6 @@ public class EnemyMovement : MonoBehaviour {
     void PlaySound()
     {
         //audioManager.SetSFXVolume(.5f);
-        AudioManager.instance.PlaySFXClip(AudioManager.instance.sfx[1], .4f);
+        AudioManager.instance.PlaySFXClip(AudioManager.instance.sfx[2], .4f);
     }
 }
