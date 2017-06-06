@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour {
     Vector3 velocity;
     Transform player, enemy;
     float h, h2, timer;
+    bool firstSpawn = true;
     
 	void Start () {
         //animator = GetComponent<Animator>();   PUT THIS IN ONCE ENEMY HAS ANIMATOR
@@ -44,7 +45,11 @@ public class EnemyMovement : MonoBehaviour {
         {
             if (ItemScript.current_light > h2)
             {
-                MoveSpeed += 0.5f;
+                if (firstSpawn)
+                {
+                    MoveSpeed += 1f;
+                    firstSpawn = false;
+                }
             }
             velocity.x = MoveSpeed;
         }
@@ -52,7 +57,11 @@ public class EnemyMovement : MonoBehaviour {
         {
             if (ItemScript.current_light < h2)
             {
-                MoveSpeed += 0.5f;
+                if (firstSpawn)
+                {
+                    MoveSpeed += 1f;
+                    firstSpawn = false;
+                }
             }
             velocity.x = -MoveSpeed;
         }
