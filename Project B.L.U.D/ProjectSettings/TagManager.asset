@@ -9,6 +9,8 @@ TagManager:
   - text
   - inspect
   - canvas
+  - manager
+  - SceneText
   layers:
   - Default
   - TransparentFX

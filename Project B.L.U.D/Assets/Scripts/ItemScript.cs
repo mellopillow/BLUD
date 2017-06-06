@@ -17,10 +17,10 @@ public class ItemScript : MonoBehaviour {
     // battery variables
 	public static bool has_battery = false;
 	public static int battery_count = 0;
-    public static float max_light = 0.5f;
+    public static float max_light = 0.28f;
     public static float current_light = 0.5f;
     public static float decrease_rate = .01f;
-    public static float min_light = 0.05f;
+    public static float min_light = 0.08f;
     public static bool isMin = false;
 
 	public static int spawnlocation = 0;

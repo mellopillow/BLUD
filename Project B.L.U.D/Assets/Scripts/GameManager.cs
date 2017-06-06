@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+    
+
     public GameObject player;
     public GameObject PauseMenu;
     public float levelStartDelay = 2f; // time delay for when starting and transitioning into levels or scene
@@ -11,6 +13,7 @@ public class GameManager : MonoBehaviour {
     private GameObject levelImage;
     private bool doingSetup;
     float alpha;
+
 
     void InitGame()
     {
@@ -27,6 +30,8 @@ public class GameManager : MonoBehaviour {
         levelImage.SetActive(false);
         doingSetup = false;
     }
+
+   
 	// Use this for initialization
 	void Start () {
         PauseMenu.SetActive(false);
@@ -54,7 +59,8 @@ public class GameManager : MonoBehaviour {
     {
         Time.timeScale = 1;
         GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().unfreeze();
-        GameObject.FindWithTag("Enemy").GetComponent<EnemyMovement>().unfreeze();
+        if (GameObject.FindWithTag("Enemy") != null)
+            GameObject.FindWithTag("Enemy").GetComponent<EnemyMovement>().unfreeze();
         PauseMenu.SetActive(false);
     }
 
