@@ -1713,6 +1713,11 @@ Prefab:
       propertyPath: sfx.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 49d15f294659ad44f9575a22048f5fc3, type: 3}
+    - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
+        type: 2}
+      propertyPath: sfx.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b8f8802bf46fdae45bade956fba551d5, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 356cae6b76da5c348b9d94d7dccdf69a, type: 2}
   m_IsPrefabParent: 0

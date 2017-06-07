@@ -1081,7 +1081,7 @@ SpriteRenderer:
   m_SortingLayerID: 1817423249
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: ef77352b3d41e704e934928474425ee9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2af71685e38b15244acc447ce865e4a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1096,7 +1096,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685198926}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.2, y: -4.7, z: 0.0625}
+  m_LocalPosition: {x: 52.2, y: -5.3, z: 0.0625}
   m_LocalScale: {x: 1.4134054, y: 1.3005328, z: 0.6266048}
   m_Children:
   - {fileID: 47728781}
@@ -1117,9 +1117,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
-  BaseImage: {fileID: 21300000, guid: ef77352b3d41e704e934928474425ee9, type: 3}
-  ActivatedImage: {fileID: 21300000, guid: 267cc306fe4f0e646a476632b35a8065, type: 3}
+  ActivationProximity: 5
+  BaseImage: {fileID: 21300000, guid: 2af71685e38b15244acc447ce865e4a5, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: ee07b03ae06856a4db01fa20306a98ef, type: 3}
   ot:
   - Yikes!
   - " Someone must\u2019ve been hungry!"
@@ -1420,8 +1420,8 @@ MonoBehaviour:
   SpawnPoint: 0
   LoadLevel: 0
   ActivationProximity: 8
-  BaseImage: {fileID: 21300000, guid: a5670af2a6e8c284087d56930e830fcb, type: 3}
-  ActivatedImage: {fileID: 21300000, guid: 5864d7d2e09a6084c82ac24b024afc0b, type: 3}
+  BaseImage: {fileID: 21300000, guid: f52437248e8cecb44a95f388803c76ff, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: 76fd3a55594d3b84aab763195154a55c, type: 3}
   ot:
   - I better find my 3 friends quick!
   - The sooner I find them,
@@ -1446,11 +1446,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.3
+      value: 4.51
       objectReference: {fileID: 0}
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.9399996
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1489,11 +1489,11 @@ Prefab:
         type: 3}
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.80911
+      value: 0.73603916
       objectReference: {fileID: 0}
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.77897
+      value: 0.60741216
       objectReference: {fileID: 0}
     - target: {fileID: 1365409805593108, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_Name
@@ -1647,11 +1647,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.8
+      value: -24.05
       objectReference: {fileID: 0}
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.94
+      value: -2.79
       objectReference: {fileID: 0}
     - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1686,12 +1686,20 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a5670af2a6e8c284087d56930e830fcb,
+      objectReference: {fileID: 21300000, guid: f52437248e8cecb44a95f388803c76ff,
         type: 3}
     - target: {fileID: 212688011357765140, guid: 7f5ec50b32e8f604a98565d36ec1e869,
         type: 2}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.62011594
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246241207985120, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.78369117
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114372034349653420, guid: 7f5ec50b32e8f604a98565d36ec1e869, type: 2}

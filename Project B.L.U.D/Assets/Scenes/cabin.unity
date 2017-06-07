@@ -676,7 +676,7 @@ SpriteRenderer:
   m_SortingLayerID: 1817423249
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 41c179326d92b9b4ba19f20af4b8358b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2af71685e38b15244acc447ce865e4a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -691,8 +691,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 365520735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.247307, y: -3.4360695, z: 0.0625}
-  m_LocalScale: {x: 0.51511, y: 0.51510984, z: 0.51510984}
+  m_LocalPosition: {x: -54.62, y: -4.08, z: 0.0625}
+  m_LocalScale: {x: 0.57782114, y: 0.57565856, z: 0.51510984}
   m_Children:
   - {fileID: 318058590}
   m_Father: {fileID: 700286132}
@@ -712,9 +712,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
+  ActivationProximity: 5
+  BaseImage: {fileID: 21300000, guid: 2af71685e38b15244acc447ce865e4a5, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: ee07b03ae06856a4db01fa20306a98ef, type: 3}
   ot:
   - The blood looks fresh...
   - Looks like someone was here recently...
@@ -776,7 +776,7 @@ Prefab:
     - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
         type: 2}
       propertyPath: sfx.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
         type: 2}
@@ -840,6 +840,11 @@ Prefab:
       propertyPath: sfx.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 49d15f294659ad44f9575a22048f5fc3, type: 3}
+    - target: {fileID: 114128182558568188, guid: 356cae6b76da5c348b9d94d7dccdf69a,
+        type: 2}
+      propertyPath: sfx.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b8f8802bf46fdae45bade956fba551d5, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 356cae6b76da5c348b9d94d7dccdf69a, type: 2}
   m_IsPrefabParent: 0
@@ -1030,7 +1035,7 @@ SpriteRenderer:
   m_SortingLayerID: 1817423249
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 41c179326d92b9b4ba19f20af4b8358b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f52437248e8cecb44a95f388803c76ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1066,9 +1071,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
+  ActivationProximity: 10
+  BaseImage: {fileID: 21300000, guid: f52437248e8cecb44a95f388803c76ff, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: 76fd3a55594d3b84aab763195154a55c, type: 3}
   ot:
   - '"PRIVATE PROPERTY!'
   - STAY OUT!"
@@ -1200,6 +1205,7 @@ GameObject:
   - component: {fileID: 567456702}
   - component: {fileID: 567456701}
   - component: {fileID: 567456699}
+  - component: {fileID: 567456700}
   m_Layer: 0
   m_Name: cabinoutside
   m_TagString: Untagged
@@ -1221,6 +1227,27 @@ MonoBehaviour:
   level: 6
   SpawnPoint: 0
   proximity: 7
+--- !u!114 &567456700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 567456698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c00eb2e79239a143b1469b715e7868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 5
+  BaseImage: {fileID: 21300000, guid: 09b52059d6389894b9f82dbf06c60c88, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: 09b52059d6389894b9f82dbf06c60c88, type: 3}
+  ot:
+  - The door is locked...
+  - Is this opened by a key?
+  isBattery: 0
 --- !u!212 &567456701
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1597,12 +1624,12 @@ Prefab:
     - target: {fileID: 224180391396328590, guid: 2174129517c318645b118a492d164f61,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 4.38
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 224180391396328590, guid: 2174129517c318645b118a492d164f61,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 3.09
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 224180391396328590, guid: 2174129517c318645b118a492d164f61,
         type: 2}
@@ -1785,7 +1812,7 @@ Prefab:
     - target: {fileID: 114461984076641780, guid: 944d3cb115c0d4f4f86952839c2e1add,
         type: 2}
       propertyPath: SpawnPoint
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 944d3cb115c0d4f4f86952839c2e1add, type: 2}
@@ -2399,7 +2426,7 @@ SpriteRenderer:
   m_SortingLayerID: 1817423249
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 41c179326d92b9b4ba19f20af4b8358b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0336f39947f7f264abab847e7a2c53f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2414,7 +2441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647671125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.147305, y: -2.6360693, z: 0.0625}
+  m_LocalPosition: {x: -36.28, y: -6.38, z: 0.0625}
   m_LocalScale: {x: 0.51511, y: 0.51510984, z: 0.51510984}
   m_Children:
   - {fileID: 873288071}
@@ -2437,7 +2464,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10}
+    oldSize: {x: 20, y: 20}
     newSize: {x: 10, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2460,9 +2487,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 0
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
+  ActivationProximity: 10
+  BaseImage: {fileID: 21300000, guid: 0336f39947f7f264abab847e7a2c53f7, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: e1bf96ee1654ca043ad437b2f930603e, type: 3}
   ot:
   - '"Gone gardening. Do not disturb!"'
   - Huh.Let's check out the gardens!

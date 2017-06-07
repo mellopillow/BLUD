@@ -707,10 +707,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -210294717
-  m_SortingLayer: 3
+  m_SortingLayerID: 1817423249
+  m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 41c179326d92b9b4ba19f20af4b8358b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 56904629720dc85498baa9f81aee2842, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -725,7 +725,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 222992599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23, y: -1.9, z: 0.0625}
+  m_LocalPosition: {x: -29.8, y: -4.9, z: 0.0625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71731844}
@@ -746,9 +746,9 @@ MonoBehaviour:
   LevelToLoad: 0
   SpawnPoint: 0
   LoadLevel: 0
-  ActivationProximity: 5
-  BaseImage: {fileID: 21300000, guid: 41c179326d92b9b4ba19f20af4b8358b, type: 3}
-  ActivatedImage: {fileID: 21300000, guid: 41c179326d92b9b4ba19f20af4b8358b, type: 3}
+  ActivationProximity: 7
+  BaseImage: {fileID: 21300000, guid: 56904629720dc85498baa9f81aee2842, type: 3}
+  ActivatedImage: {fileID: 21300000, guid: eefca3136eee6a340908d51b2716aa03, type: 3}
   ot:
   - These bones look really..
   - Focus Bonny, gotta find those critters
@@ -1666,8 +1666,8 @@ MonoBehaviour:
   BaseImage: {fileID: 21300000, guid: a5670af2a6e8c284087d56930e830fcb, type: 3}
   ActivatedImage: {fileID: 21300000, guid: 5864d7d2e09a6084c82ac24b024afc0b, type: 3}
   ot:
-  - '"Deeper Forest - Right'
-  - Cemetary - Left"
+  - '"Deeper Forest 3 - Right'
+  - Cemetery - Left"
   isBattery: 0
 --- !u!4 &720443187 stripped
 Transform:

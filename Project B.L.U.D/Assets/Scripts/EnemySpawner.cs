@@ -89,7 +89,7 @@ public class EnemySpawner : MonoBehaviour {
             if (spawned == false)
             {
                 // 30% chance of spawning
-                int random_value = Random.Range(0, 3);
+                int random_value = Random.Range(0, 2);
                 print(random_value);
                 if (random_value == randomHit)
                 {

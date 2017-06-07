@@ -44,28 +44,12 @@ public class EnemyMovement : MonoBehaviour {
         if (h > h2)
         {
 			animator.Play ("Walking right");
-            if (ItemScript.current_light > h2)
-            {
-                if (firstSpawn)
-                {
-                    MoveSpeed += .5f;
-                    firstSpawn = false;
-                }
-            }
             velocity.x = MoveSpeed;
         }
         else
         {
 			this.gameObject.GetComponent<SpriteRenderer> ().flipX = true;
 			animator.Play ("Walking left");
-            if (ItemScript.current_light < h2)
-            {
-                if (firstSpawn)
-                {
-                    MoveSpeed += .5f;
-                    firstSpawn = false;
-                }
-            }
             velocity.x = -MoveSpeed;
         }
         enemy.Translate(velocity);

@@ -1210,7 +1210,7 @@ MonoBehaviour:
   ActivatedImage: {fileID: 21300000, guid: 088cdfe2f02b7814aa3e527eda2bb7fa, type: 3}
   ot:
   - This gate looks rusty
-  - I wonder what I can use to get through...
+  - Something sharp should do the trick
   isBattery: 0
 --- !u!212 &808010544
 SpriteRenderer:
@@ -2749,7 +2749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556b3a0a0cfe38a41980fc5287224163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextToLoad: Cemetary
+  TextToLoad: Cemetery
   FadeInTime: 2
   StayTime: 1.5
   FadeOutTime: 2
