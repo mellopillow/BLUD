@@ -544,6 +544,10 @@ Prefab:
       propertyPath: LevelToLoad
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1912207445231774, guid: 944d3cb115c0d4f4f86952839c2e1add, type: 2}
+      propertyPath: m_Name
+      value: scene3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 944d3cb115c0d4f4f86952839c2e1add, type: 2}
   m_IsPrefabParent: 0
@@ -1170,6 +1174,7 @@ GameObject:
   - component: {fileID: 808010545}
   - component: {fileID: 808010544}
   - component: {fileID: 808010543}
+  - component: {fileID: 808010546}
   m_Layer: 0
   m_Name: vines
   m_TagString: Untagged
@@ -1277,6 +1282,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.334839, y: 17.825638}
   m_EdgeRadius: 0
+--- !u!114 &808010546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808010541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f236aa99259cebb4588a53b9ded6415e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximity: 10
 --- !u!1001 &823578525
 Prefab:
   m_ObjectHideFlags: 0
@@ -1704,6 +1721,7 @@ GameObject:
   - component: {fileID: 1280657310}
   - component: {fileID: 1280657313}
   - component: {fileID: 1280657312}
+  - component: {fileID: 1280657314}
   m_Layer: 0
   m_Name: tombstone (2)
   m_TagString: Untagged
@@ -1814,6 +1832,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &1280657314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1280657309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e329d66fbf36dc248a39289bcd686ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+  SpawnPoint: 0
+  LoadLevel: 0
+  ActivationProximity: 6
+  BaseImage: {fileID: 0}
+  ActivatedImage: {fileID: 0}
+  ot: []
+  isBattery: 0
 --- !u!1 &1303685407
 GameObject:
   m_ObjectHideFlags: 0

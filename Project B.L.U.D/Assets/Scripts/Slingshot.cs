@@ -41,6 +41,7 @@ public class Slingshot : MonoBehaviour
 				//clicked = true;
 				if (ItemScript.second_critter_met == true && ItemScript.slingshot == false) {
 					ItemScript.slingshot = true;
+					Debug.Log ("obtained slingshot");
 					//slingshot dialogue
 				}
 				else {
