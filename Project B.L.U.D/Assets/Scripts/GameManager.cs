@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour {
         PauseMenu.SetActive(false);
         InGame.SetActive(true);
 
-    }
+    }   
 
     private void HideLevelImage()
     {
