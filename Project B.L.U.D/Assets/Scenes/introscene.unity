@@ -879,9 +879,40 @@ Prefab:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1670620443}
+    - target: {fileID: 114796676704028936, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1281997493}
+    - target: {fileID: 114796676704028936, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 114102439009067104, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1281997493}
+    - target: {fileID: 114102439009067104, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &609231398 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114332554713050100, guid: ad9f27c07225f6347a976ff327f0bdf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 609231397}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &609231399 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1854212786265818, guid: ad9f27c07225f6347a976ff327f0bdf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 609231397}
 --- !u!1001 &620999908
 Prefab:
   m_ObjectHideFlags: 0
@@ -1576,6 +1607,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1941186881893050, guid: ad9f27c07225f6347a976ff327f0bdf4,
     type: 2}
   m_PrefabInternal: {fileID: 609231397}
+--- !u!114 &1281997493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281997492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06fbc1c3e2a07c409f580fdcc4e3d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameManager: {fileID: 1670620443}
 --- !u!1 &1311887297
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,12 +2564,17 @@ Prefab:
         type: 2}
       propertyPath: PauseButton
       value: 
-      objectReference: {fileID: 1795203641}
+      objectReference: {fileID: 0}
     - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
         type: 2}
       propertyPath: LightBar
       value: 
-      objectReference: {fileID: 1919801645}
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
+        type: 2}
+      propertyPath: InGame
+      value: 
+      objectReference: {fileID: 609231399}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49feb78a1efe40344a27932fb0da8a90, type: 2}
   m_IsPrefabParent: 0
@@ -2561,7 +2609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6730115f6f3cc714f93e26c591da0c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightBar: {fileID: 1919801647}
+  lightBar: {fileID: 609231398}
   outline: {fileID: 0}
 --- !u!114 &1670620446 stripped
 MonoBehaviour:
@@ -2574,11 +2622,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013547357726, guid: e711035e026593049bfe3b25ba16166f,
     type: 2}
   m_PrefabInternal: {fileID: 1833684113}
---- !u!1 &1795203641 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1792871861350538, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 609231397}
 --- !u!1001 &1828657275
 Prefab:
   m_ObjectHideFlags: 0
@@ -2849,17 +2892,6 @@ MonoBehaviour:
   - What's under this rock?
   - '... this is too big to lift'
   isBattery: 0
---- !u!1 &1919801645 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1613384103397796, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 609231397}
---- !u!114 &1919801647 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114698384507341688, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 609231397}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &2091691355
 GameObject:
   m_ObjectHideFlags: 0

@@ -291,11 +291,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224180391396328590, guid: 2174129517c318645b118a492d164f61,
     type: 2}
   m_PrefabInternal: {fileID: 515685172}
---- !u!1 &75331241 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1792871861350538, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1557540876}
 --- !u!1 &75376008
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,12 +580,12 @@ Prefab:
         type: 2}
       propertyPath: PauseButton
       value: 
-      objectReference: {fileID: 75331241}
+      objectReference: {fileID: 0}
     - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
         type: 2}
       propertyPath: LightBar
       value: 
-      objectReference: {fileID: 1595405795}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49feb78a1efe40344a27932fb0da8a90, type: 2}
   m_IsPrefabParent: 0
@@ -1102,6 +1097,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114368012593408650, guid: 012cb461daf6f93439ba3d66091c88aa,
+        type: 2}
+      propertyPath: triggerLocations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4811028295217756, guid: 012cb461daf6f93439ba3d66091c88aa, type: 2}
       propertyPath: m_LocalPosition.x
       value: 70.6
@@ -1155,6 +1155,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1892970367401984, guid: f82fa103a22cbbd49b80604cd1fdf229,
         type: 2}
+    - target: {fileID: 114368012593408650, guid: 012cb461daf6f93439ba3d66091c88aa,
+        type: 2}
+      propertyPath: triggerLocations.Array.data[1]
+      value: 
+      objectReference: {fileID: 1765347481}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 012cb461daf6f93439ba3d66091c88aa, type: 2}
   m_IsPrefabParent: 0
@@ -3117,11 +3122,6 @@ Transform:
   m_Father: {fileID: 1351161903}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1595405795 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1613384103397796, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1557540876}
 --- !u!1001 &1632897558
 Prefab:
   m_ObjectHideFlags: 0

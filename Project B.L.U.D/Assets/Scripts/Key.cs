@@ -5,6 +5,7 @@ using UnityEngine;
 public class Key : MonoBehaviour {
 
 	public float proximity;
+    public GameObject key;
 
 	// Use this for initialization
 	void Start () {
@@ -14,9 +15,10 @@ public class Key : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space")){
+		if (Input.GetKeyDown ("e")){
 			if (CheckCloseTo ("Player", proximity)) {
 				ItemScript.key = true;
+                key.SetActive(true);
 			}		
 		}
 	}
