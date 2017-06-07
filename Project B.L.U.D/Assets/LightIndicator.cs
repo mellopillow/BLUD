@@ -7,7 +7,6 @@ public class LightIndicator : MonoBehaviour {
 
     float ratio = 0f;
     public Image lightBar = null;
-    public Image outline = null;
     //public Text lightText = null;
     //public Text healthTextOptional = null;
     bool hit;
