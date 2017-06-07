@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 21697253}
   - component: {fileID: 21697256}
   - component: {fileID: 21697255}
+  - component: {fileID: 21697257}
   m_Layer: 0
   m_Name: tombstone (4)
   m_TagString: Untagged
@@ -347,6 +348,18 @@ MonoBehaviour:
   - 'Oh I found a slingshot! '
   - I think I might be able to use this
   isBattery: 0
+--- !u!114 &21697257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21697252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e329d66fbf36dc248a39289bcd686ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proximity: 6
 --- !u!1 &22690441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,7 +1157,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 685161432}
+      objectReference: {fileID: 0}
     - target: {fileID: 114796676704028936, guid: ad9f27c07225f6347a976ff327f0bdf4,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1154,7 +1167,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 685161432}
+      objectReference: {fileID: 0}
     - target: {fileID: 114102439009067104, guid: ad9f27c07225f6347a976ff327f0bdf4,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1178,22 +1191,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &685161430 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1613384103397796, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 685161429}
---- !u!1 &685161431 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1792871861350538, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 685161429}
---- !u!114 &685161432 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114200134717307414, guid: ad9f27c07225f6347a976ff327f0bdf4,
-    type: 2}
-  m_PrefabInternal: {fileID: 685161429}
-  m_Script: {fileID: 11500000, guid: e06fbc1c3e2a07c409f580fdcc4e3d02, type: 3}
 --- !u!1 &808010541
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,7 +1749,6 @@ GameObject:
   - component: {fileID: 1280657310}
   - component: {fileID: 1280657313}
   - component: {fileID: 1280657312}
-  - component: {fileID: 1280657314}
   m_Layer: 0
   m_Name: tombstone (2)
   m_TagString: Untagged
@@ -1863,25 +1859,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
---- !u!114 &1280657314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1280657309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e329d66fbf36dc248a39289bcd686ac4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelToLoad: 0
-  SpawnPoint: 0
-  LoadLevel: 0
-  ActivationProximity: 6
-  BaseImage: {fileID: 0}
-  ActivatedImage: {fileID: 0}
-  ot: []
-  isBattery: 0
 --- !u!1 &1303685407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2869,12 +2846,12 @@ Prefab:
         type: 2}
       propertyPath: PauseButton
       value: 
-      objectReference: {fileID: 685161431}
+      objectReference: {fileID: 0}
     - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
         type: 2}
       propertyPath: LightBar
       value: 
-      objectReference: {fileID: 685161430}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49feb78a1efe40344a27932fb0da8a90, type: 2}
   m_IsPrefabParent: 0

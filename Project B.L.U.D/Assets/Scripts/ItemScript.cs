@@ -8,7 +8,7 @@ public class ItemScript : MonoBehaviour {
 
     public static bool key = false;
 	public static bool key2 = false;
-	public static bool chainsaw = false;
+	public static bool chainsaw = true;
 	public static bool slingshot = false;
     public static bool first_critter_met = false;
     public static bool first_critter = false;
