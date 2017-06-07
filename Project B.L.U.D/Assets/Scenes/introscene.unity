@@ -429,8 +429,8 @@ Transform:
   m_LocalPosition: {x: -16.8, y: -10.1, z: 0}
   m_LocalScale: {x: 0.8091071, y: 0.7789658, z: 1}
   m_Children:
-  - {fileID: 575158232}
   - {fileID: 1470123006}
+  - {fileID: 575158232}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -826,7 +826,7 @@ Transform:
   m_LocalScale: {x: 1.2584198, y: 1.3750424, z: 1}
   m_Children: []
   m_Father: {fileID: 330201083}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &592613382
 Prefab:
@@ -1000,6 +1000,16 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190816695016272, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1670620446}
+    - target: {fileID: 114190816695016272, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
@@ -2409,7 +2419,7 @@ Transform:
   m_LocalScale: {x: 1.2584242, y: 1.3750412, z: 1}
   m_Children: []
   m_Father: {fileID: 330201083}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1470123007
 MonoBehaviour:
