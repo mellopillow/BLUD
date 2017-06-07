@@ -257,6 +257,19 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 103449849}
   m_Script: {fileID: 11500000, guid: 48ab1b42ad005414db4ee656e28ba879, type: 3}
+--- !u!114 &55653196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55653194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6730115f6f3cc714f93e26c591da0c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightBar: {fileID: 211929474}
+  outline: {fileID: 0}
 --- !u!114 &55653197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +599,11 @@ Prefab:
       propertyPath: LightBar
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
+        type: 2}
+      propertyPath: InGame
+      value: 
+      objectReference: {fileID: 603732047}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49feb78a1efe40344a27932fb0da8a90, type: 2}
   m_IsPrefabParent: 0
@@ -672,6 +690,12 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+--- !u!114 &211929474 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114332554713050100, guid: ad9f27c07225f6347a976ff327f0bdf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1557540876}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!224 &211961447 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224180391396328590, guid: 2174129517c318645b118a492d164f61,
@@ -1429,6 +1453,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4612268427465868, guid: 944d3cb115c0d4f4f86952839c2e1add,
     type: 2}
   m_PrefabInternal: {fileID: 943326808}
+--- !u!1 &603732047 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1854212786265818, guid: ad9f27c07225f6347a976ff327f0bdf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1557540876}
 --- !u!1001 &633975601
 Prefab:
   m_ObjectHideFlags: 0
@@ -3083,6 +3112,16 @@ Prefab:
       value: 
       objectReference: {fileID: 55653195}
     - target: {fileID: 114873480132956682, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190816695016272, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 55653195}
+    - target: {fileID: 114190816695016272, guid: ad9f27c07225f6347a976ff327f0bdf4,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pause
