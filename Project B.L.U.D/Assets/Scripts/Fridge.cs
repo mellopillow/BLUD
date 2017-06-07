@@ -21,7 +21,7 @@ public class Fridge : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Input.GetKeyDown ("space")){
+		if (Input.GetKeyDown ("e")){
 			if (CheckCloseTo ("Player", proximity)) {
 				this.gameObject.SetActive (false);
 				door1.SetActive (false);

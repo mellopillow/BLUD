@@ -5,6 +5,9 @@ using UnityEngine;
 public class ThirdCritter : MonoBehaviour {
 
 	public float proximity;
+	public GameObject gate;
+	public GameObject front_gate;
+	public GameObject back_gate;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +17,7 @@ public class ThirdCritter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space")) {
+		if (Input.GetKeyDown ("e")) {
 			if (CheckCloseTo ("Player", proximity)) {
 				if (ItemScript.third_critter == false) {
 					if (ItemScript.third_critter_met == false) {
@@ -25,6 +28,10 @@ public class ThirdCritter : MonoBehaviour {
 							//dialogue
 						} else if (ItemScript.key2 == true) {
 							ItemScript.third_critter = true;
+							gate.GetComponent<SpriteRenderer> ().sprite = null;
+							front_gate.SetActive (true);
+							back_gate.SetActive (true);
+							this.gameObject.SetActive (false);
 							//saved dialogue
 						}
 					}

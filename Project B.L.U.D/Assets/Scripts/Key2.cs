@@ -2,21 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour {
+public class Key2 : MonoBehaviour {
 
 	public float proximity;
 
 	// Use this for initialization
 	void Start () {
-		
-		
+
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space")){
+		if (Input.GetKeyDown ("e")){
 			if (CheckCloseTo ("Player", proximity)) {
-				ItemScript.key = true;
+				if (ItemScript.slingshot == true) {
+					ItemScript.key2 = true;
+					Debug.Log ("KEY2");
+				}
 			}		
 		}
 	}

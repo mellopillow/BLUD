@@ -12,7 +12,7 @@ public class CabinDoor : MonoBehaviour {
 
 	void Update(){
 
-		if (Input.GetKeyDown ("space")){
+		if (Input.GetKeyDown ("e")){
 			if (CheckCloseTo("Player", proximity))
 			{
 				if (ItemScript.key == true) {

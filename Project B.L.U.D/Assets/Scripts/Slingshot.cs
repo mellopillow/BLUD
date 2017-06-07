@@ -33,7 +33,7 @@ public class Slingshot : MonoBehaviour
 
 	void Update(){
 
-		if (Input.GetKeyDown ("space") && !load.isLoading()){
+		if (Input.GetKeyDown ("e") && !load.isLoading()){
 			if (CheckCloseTo("Player", ActivationProximity))
 			{
 				load.LoadArray(ot);

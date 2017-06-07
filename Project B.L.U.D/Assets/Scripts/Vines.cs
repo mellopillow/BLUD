@@ -13,7 +13,7 @@ public class Vines : MonoBehaviour {
 	}
 
 	void Update () {
-		if (Input.GetKeyDown ("space")){
+		if (Input.GetKeyDown ("e")){
 			if (CheckCloseTo ("Player", proximity)) {
 				if (ItemScript.chainsaw == true) {
 					this.gameObject.SetActive (false);
