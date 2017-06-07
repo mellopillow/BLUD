@@ -577,6 +577,16 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 114873480132956682, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1519398530}
+    - target: {fileID: 114873480132956682, guid: ad9f27c07225f6347a976ff327f0bdf4,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Pause
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
   m_IsPrefabParent: 0
@@ -1094,6 +1104,16 @@ Prefab:
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 265266875}
+    - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
+        type: 2}
+      propertyPath: PauseButton
+      value: 
+      objectReference: {fileID: 1388565491}
+    - target: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
+        type: 2}
+      propertyPath: LightBar
+      value: 
+      objectReference: {fileID: 1515579721}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 49feb78a1efe40344a27932fb0da8a90, type: 2}
   m_IsPrefabParent: 0
@@ -1373,6 +1393,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4764216335474224, guid: 94ead53422251a742b9af82a0deaa37e,
     type: 2}
   m_PrefabInternal: {fileID: 1776860191}
+--- !u!1 &1388565491 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1792871861350538, guid: ad9f27c07225f6347a976ff327f0bdf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 265266874}
 --- !u!1001 &1428588931
 Prefab:
   m_ObjectHideFlags: 0
@@ -1478,6 +1503,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224180391396328590, guid: 2174129517c318645b118a492d164f61,
     type: 2}
   m_PrefabInternal: {fileID: 1428588931}
+--- !u!1 &1515579721 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1613384103397796, guid: ad9f27c07225f6347a976ff327f0bdf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 265266874}
 --- !u!1 &1519398528 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1397815829828670, guid: 49feb78a1efe40344a27932fb0da8a90,
@@ -1498,6 +1528,12 @@ MonoBehaviour:
   FadeInTime: 2
   StayTime: 1.5
   FadeOutTime: 2
+--- !u!114 &1519398530 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114729807358104190, guid: 49feb78a1efe40344a27932fb0da8a90,
+    type: 2}
+  m_PrefabInternal: {fileID: 1016186818}
+  m_Script: {fileID: 11500000, guid: 48ab1b42ad005414db4ee656e28ba879, type: 3}
 --- !u!1 &1617651626 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1365409805593108, guid: 7f5ec50b32e8f604a98565d36ec1e869,

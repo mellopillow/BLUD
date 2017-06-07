@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour {
     Transform player, enemy;
     float h, h2, timer;
     bool firstSpawn = true;
+    public float minDistance = 5f;
     
 	void Start () {
         animator = GetComponent<Animator>();   
@@ -43,6 +44,7 @@ public class EnemyMovement : MonoBehaviour {
 
         if (h > h2)
         {
+            
 			animator.Play ("Walking right");
             velocity.x = MoveSpeed;
         }
