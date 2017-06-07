@@ -2923,26 +2923,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1454930743}
-    - target: {fileID: 1070730147451550, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
-      propertyPath: m_Name
-      value: Mr. Hedgehog
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755626037058118, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
-      propertyPath: m_Name
-      value: Whiny Squirrel
-      objectReference: {fileID: 0}
-    - target: {fileID: 114173588947339358, guid: ad9f27c07225f6347a976ff327f0bdf4,
-        type: 2}
-      propertyPath: Critter1Image
-      value: 
-      objectReference: {fileID: 21300000, guid: a4fabce32903b8745997504b927f70c3,
-        type: 3}
-    - target: {fileID: 114173588947339358, guid: ad9f27c07225f6347a976ff327f0bdf4,
-        type: 2}
-      propertyPath: Critter2Image
-      value: 
-      objectReference: {fileID: 21300000, guid: 4033cd91a90ac434280efadc50e14467,
-        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9f27c07225f6347a976ff327f0bdf4, type: 2}
   m_IsPrefabParent: 0

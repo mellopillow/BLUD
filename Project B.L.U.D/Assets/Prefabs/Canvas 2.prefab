@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 222650330874089690}
   - component: {fileID: 114799408564589328}
   m_Layer: 5
-  m_Name: Senor Squirrel
+  m_Name: Mr. Hedgehog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 222645782217125344}
   - component: {fileID: 114164826934920086}
   m_Layer: 5
-  m_Name: Mr. Hedgehog
+  m_Name: Whiny Squirrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -531,8 +531,8 @@ MonoBehaviour:
   Key2Image: {fileID: 21300000, guid: 5d233de86db31ad42981f2fd6207dd0b, type: 3}
   ChainSawImage: {fileID: 21300000, guid: a8b13f7b7c0a8394d994f94138deaef2, type: 3}
   SlingShotImage: {fileID: 21300000, guid: 487dbed96be2d8642b22d64ffda6007a, type: 3}
-  Critter1Image: {fileID: 21300000, guid: 4033cd91a90ac434280efadc50e14467, type: 3}
-  Critter2Image: {fileID: 21300000, guid: a4fabce32903b8745997504b927f70c3, type: 3}
+  Critter1Image: {fileID: 21300000, guid: a4fabce32903b8745997504b927f70c3, type: 3}
+  Critter2Image: {fileID: 21300000, guid: 4033cd91a90ac434280efadc50e14467, type: 3}
   Critter3Image: {fileID: 21300000, guid: c6d07368e9364f34a87715f5db307ec6, type: 3}
   Key1Holder: {fileID: 114910249532956776}
   Key2Holder: {fileID: 114395669704791880}
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: b148bf1dacf6e074fb187a0e2aea92b8, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: b148bf1dacf6e074fb187a0e2aea92b8, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
