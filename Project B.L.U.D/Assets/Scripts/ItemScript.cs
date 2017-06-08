@@ -8,7 +8,7 @@ public class ItemScript : MonoBehaviour {
 
     public static bool key = false;
 	public static bool key2 = false;
-	public static bool chainsaw = true;
+	public static bool chainsaw = false;
 	public static bool slingshot = false;
     public static bool first_critter_met = false;
     public static bool first_critter = false;
@@ -21,7 +21,7 @@ public class ItemScript : MonoBehaviour {
 	public static int battery_count = 0;
     public static float max_light = 0.28f;
     public static float current_light = 0.5f;
-    public static float decrease_rate = .01f;
+    public static float decrease_rate = .008f;
     public static float min_light = 0.08f;
     public static bool isMin = false;
 

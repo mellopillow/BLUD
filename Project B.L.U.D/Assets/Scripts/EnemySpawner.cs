@@ -66,11 +66,11 @@ public class EnemySpawner : MonoBehaviour {
         //TriggerSpawn();
         if (spawned && playedSFX)
         {
-            AudioManager.instance.PlaySFXClip(clip, .6f);
+            AudioManager.instance.PlaySFXClip(clip, .7f);
             playedSFX = false;
             AudioManager.instance.StopMusic();
             AudioManager.instance.PlayMusic(AudioManager.instance.music[2], .9f);
-            AudioManager.instance.PlaySFXClip(AudioManager.instance.sfx[1], .7f);
+            AudioManager.instance.PlaySFXClip(AudioManager.instance.sfx[1], .5f);
         }
         if (!spawned && !playedSFX)
         {

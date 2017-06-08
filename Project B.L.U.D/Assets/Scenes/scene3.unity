@@ -269,7 +269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightBar: {fileID: 211929474}
-  outline: {fileID: 0}
 --- !u!114 &55653197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,7 +1165,7 @@ Prefab:
     - target: {fileID: 114368012593408650, guid: 012cb461daf6f93439ba3d66091c88aa,
         type: 2}
       propertyPath: spawnDistance
-      value: -65
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 114368012593408650, guid: 012cb461daf6f93439ba3d66091c88aa,
         type: 2}
@@ -1721,7 +1720,7 @@ MonoBehaviour:
   BaseImage: {fileID: 21300000, guid: a5670af2a6e8c284087d56930e830fcb, type: 3}
   ActivatedImage: {fileID: 21300000, guid: 5864d7d2e09a6084c82ac24b024afc0b, type: 3}
   ot:
-  - '"Deeper Forest 3 - Right'
+  - '"Deeper Forest 2 - Right'
   - Cemetery - Left"
   isBattery: 0
 --- !u!4 &720443187 stripped
